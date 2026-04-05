@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="homework-expectations"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Written homework expectations</title>
+
+  <paragraphs>
+    <title>Grading and resubmissions</title>
+
+    <p>Each exercise will be graded as
+    <dl>
+      <li><title>E (exemplary)</title>
+      <p>which is 4 out of 4 points,</p>
+      </li>
+      <li><title>S (Satisfactory)</title>
+      <p>which is 3 out of 4 points, or</p>
+      </li>
+      <li><title>NY (not yet)</title>
+      <p>which is 0 out of 4 points.</p>
+      </li>
+    </dl>
+    </p>
+
+    <p>
+      If you earn “S” or “NY”, you may revise and resubmit that
+      exercise according to the following parameters:
+
+      <ol>
+        <li>
+          <p>
+            Make sure you include the problem number.
+          </p>
+        </li>
+        <li>
+          <p>
+            Rewrite your entire solution as if you are doing it for
+            the first time (unless I direct you otherwise).  You need
+            not restate the question in full.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write at least two sentences about what you learned from
+            re-doing the problem.  For instance, you might write “I
+            used to think that …, but now I understand that …”
+          </p>
+        </li>
+        <li>
+          <p>
+            You must have submitted an honest attempt on the problem
+            by the original deadline (or requested an extension) in
+            order to resubmit.  If you did not submit the exercise
+            originally, see me to discuss options.
+          </p>
+        </li>
+        <li>
+          <p>
+            Each week, you may submit up to two revised exercises,
+            within two weeks of their original due date.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Collaboration and Academic Honesty</title>
+
+    <p>
+      You are allowed to collaborate on the homework since this is a
+      good way to learn together.. However, you must be academically
+      honest and adhere to the expectations for collaboration.  A good
+      self-test is this: am I using collaboration for greater
+      understanding of course content?  If yes, you are likely being
+      academically honest.  If, however, you are using collaboration
+      to find answers that you don’t understand in order to gain
+      “points”, you are likely being academically dishonest.
+    </p>
+
+    <p>
+      To help support you in being a student of honesty and integrity,
+      here are our guidelines for collaboration on written homework:
+      <ul>
+        <li>
+          <p>
+            “Collaboration” means “working together at roughly the
+            same stage of the exercise”.  It’s not a collaboration if
+            one person does the work and then shares the completed
+            product with another.
+          </p>
+        </li>
+        <li>
+          <p>
+            You may ask me at any time up to 24 hours before a
+            homework set is due about the ideas in an exercise and
+            even for hints, provided you have made an honest attempt
+            at the exercise before asking me.
+          </p>
+        </li>
+        <li>
+          <p>
+            You must write your solutions in your own words, and the
+            words you write need to make sense to you.  You should be
+            able to explain your thinking aloud to me if I were to ask
+            you about it.
+          </p>
+        </li>
+        <li>
+          <p>
+            You may not collaborate with people outside our class on
+            homework exercises: not other students, not tutors in the
+            math center, not other professors.
+          </p>
+        </li>
+        <li>
+          <p>
+            You may not use internet resources other than our textbook
+            and Sage: not Google generally, not Chegg, not ChatGPT,
+            not other online “help” resources.
+          </p>
+        </li>
+        <li>
+          <p>
+            You may not copy from any other source (another student or
+            the internet).  Again: you can ask me for help and
+            support.  Please do this instead of resorting to any kind
+            of academic dishonesty.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Writing mathematics well</title>
+
+    <p>
+      Here is an example from one of a recent MTH 204 course.  There’s
+      a screenshot of a portion of one problem below, and the full
+      problem solution in the example link above.
+    </p>
+
+    <image source="images/hmk-sample.png" width="90%">
+      <shortdescription>A photograph of exemplary student work that
+      demonstrates the principles described below</shortdescription>
+      <description>
+        <p>A photograph of exemplary student work that
+        demonstrates the principles described below</p>
+      </description>
+    </image>
+
+    <p>
+      Here's why this is well done:
+
+      <ul>
+        <li>
+          <p>
+            The writer states the question they are responding to and
+            provides detailed thinking about their solution.  Full
+            reasoning is provided!
+          </p>
+        </li>
+        <li>
+          <p>
+            Every thought is a complete sentence with subject and verb
+            (the “equals” sign is a verb).
+          </p>
+        </li>
+        <li>
+          <p>
+            They use proper notation that follows standard
+            mathematical conventions
+          </p>
+        </li>
+        <li>
+          <p>
+            If you read the full example, you see that their
+            answers/conclusions are clear and easy to find.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Overall Expectations</title>
+
+    <p>For each of these assignments, here are expectations for how
+    you present your work.
+
+    <ol>
+      <li>
+        <p>
+          Use your best handwriting.  Work in pencil.  (Typeset work
+          is certainly acceptable, but not required.)
+        </p>
+      </li>
+      <li>
+        <p>
+          Provide a careful statement of each problem.  (Writing
+          simply “#3” and then your answer is insufficient; it is not
+          necessary to re-state every word, but you should at least
+          provide a summary to indicate the context.  Clearly state
+          the exercise number prior to every problem statement:
+          “Exercise #3: Consider each matrix below …”.)
+        </p>
+      </li>
+      <li>
+        <p>
+          As noted above in the “writing mathematics” section,
+          explanations are required: write in complete sentences,
+          using correct spelling, punctuation, and grammar.  The
+          reasoning that leads to answers is at least as important as
+          the answers that result.  For example, you might write
+          “Through row operations, we see that x = 3, y = -2, z = 7,
+          and thus the original system has a unique solution.”  Every
+          homework exercise should have at least one complete sentence
+          that either states what you plan to do or what you have
+          found.
+        </p>
+      </li>
+      <li>
+        <p>
+          Whenever a picture or image may be helpful, include one.
+          And label each appropriately; an image without labels lacks
+          meaning.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use correct mathematical language.  We will place key
+          emphasis on language throughout the course.  For instance,
+          from MTH 204 it would be valid to say “Thus, we have shown
+          that the system of equations is inconsistent,” but it would
+          be incorrect to say “Thus, we have shown that the matrix is
+          inconsistent.”  The term inconsistent applies to a system of
+          equations, but not a matrix itself.
+        </p>
+      </li>
+      <li>
+        <p>
+          For most problems, you should think of your work in two
+          phases: (a) figure out what’s going on mathematically, which
+          could involve crossing out work or backtracking, and (b)
+          writing up your thinking carefully.  Communication is
+          extremely important so please think about separating these
+          two tasks.
+        </p>
+      </li>
+    </ol>
+    </p>
+
+    <p>
+      These assignments are usually not the type that you can sit down
+      and do all of the problems the day they are due.  Rather, they
+      will take careful thought well in advance.  Working regularly
+      and consistently over several days’ time will serve you well.
+    </p>
+    <p>
+      Your best work is expected on each homework assignment.
+      Planning ahead and giving yourself an appropriate amount of time
+      to work will enable you to meet these standards.  Consider these
+      assignments your opportunity to show me how well you understand
+      recent material.
+    </p>
+  </paragraphs>
+</section>

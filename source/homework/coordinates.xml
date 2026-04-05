@@ -1,0 +1,34 @@
+<diagram dimensions="(300, 300)" margins="5"
+         xmlns="https://prefigure.org">
+  <definition>v1=(2,1)</definition>
+  <definition>v2=(-2,2)</definition>
+  <coordinates bbox="(-6,-6,6,6)">
+    <grid at="hv-grid" stroke="#ddd"/>
+    <axes />
+    <grid at="b-grid" basis="(v1,v2)" stroke="lightgray"/>
+    <vector at="v1" v="v1" alignment="ne">
+      <m>\vvec_1</m>
+    </vector>
+    <vector at="v2" v="v2" alignment="nw">
+      <m>\vvec_2</m>
+    </vector>
+  </coordinates>
+
+  <annotations>
+    <annotation ref="figure"
+                text="Two vectors that form a basis for R 2 and a representation of the linear combinations that they form">
+      <annotation ref="hv-grid"
+                  text="The standard horizontal vertical coordinate grid"/>
+      <annotation ref="group"
+                  text="Basis vectors v one and v two and skewed coordinate grid representing their linear combinations">
+        <annotation ref="v1"
+                    text="The vector v one"/>
+        <annotation ref="v2"
+                    text="The vector v two"/>
+        <annotation ref="b-grid"
+                    text="The grid representing the linear combinations of v one and v two"/>
+      </annotation>
+    </annotation>
+  </annotations>
+</diagram>
+    

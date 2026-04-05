@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<worksheet xml:id="gaussian-elimination">
+  <title>Gaussian elimination</title>
+
+  <p><alert>MTH 204:  January 15</alert></p>
+
+<exercise>
+  <statement>
+    <p workspace="1in">
+      Suppose we have a linear system whose augmented matrix is
+      <md>
+        \left[
+          \begin{array}{ccc|c}
+          1 \amp 0 \amp 0 \amp -2 \\
+          0 \amp 1 \amp 0 \amp 4 \\
+          0 \amp 0 \amp 1 \amp 1 \\
+          \end{array}
+        \right]
+      </md>
+      What does this tell us about the set of solutions to the linear
+      system? Is there 0, 1, or infinitely many solutions?
+    </p>
+  </statement>
+  <solution>
+    <p>If the variables are <m>x</m>, <m>y</m>, and <m>z</m>, we know
+    that <m>x=-2</m>, <m>y=4</m>, and <m>z=1</m>.  Therefore, there is
+    exactly one solution.</p>
+  </solution>
+</exercise>
+
+<exercise>
+  <introduction>
+    <p>
+      Let's consider this linear system.
+      <md>
+        \begin{alignedat}{4}
+          x \amp  {}+{}  \amp y \amp  {}+{}  \amp 2z \amp  {}={}  \amp 1 \\
+          2x \amp  {}-{}  \amp y \amp  {}-{}  \amp 2z \amp  {}={}  \amp 2 \\
+          -x \amp  {}+{}  \amp y \amp  {}+{}  \amp z \amp  {}={}  \amp 0 \\
+        \end{alignedat}
+      </md>
+    </p>
+  </introduction>
+  <task workspace="1in">
+    <statement>
+      <p>
+        Write this system as an augmented matrix.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          \left[\begin{array}{rrr|r}
+          1 \amp 1 \amp 2 \amp 1 \\
+          2 \amp -1 \amp -2 \amp 2 \\
+          -1 \amp 1 \amp 1 \amp 0 \\
+          \end{array}\right]
+        </md>
+      </p>
+    </solution>
+  </task>
+
+  <task workspace="1in">
+    <statement>
+      <p>
+        For the first step in the Gaussian elimination algorithm, we
+        would like to make the entry in the second row and first column
+        a <q>0</q>. You can do this by performing a row replacement
+        operation, multiplying row 1 by -2 and adding it to row
+        2. Sometimes, people write this as <m>-2R_1 + R_2 \to R_2</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          \left[\begin{array}{rrr|r}
+          1 \amp 1 \amp 2 \amp 1 \\
+          0 \amp -3 \amp -6 \amp 0 \\
+          -1 \amp 1 \amp 1 \amp 0 \\
+          \end{array}\right]
+        </md>
+      </p>
+    </solution>
+  </task>
+  <task workspace="1in">
+    <statement>
+      <p>
+        For the second step, we would like to make the entry in the
+        third row and first column a <q>0</q>. Determine the row
+        replacement operation you would use and then perform that
+        operation.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We can use <m>R_1+R_3\to R_3</m> and obtain
+        <md>
+          \left[\begin{array}{rrr|r}
+          1 \amp 1 \amp 2 \amp 1 \\
+          0 \amp -3 \amp -6 \amp 0 \\
+          0 \amp 2 \amp 3 \amp 1 \\
+          \end{array}\right]
+        </md>
+      </p>
+    </solution>
+  </task>
+  <task workspace="1in">
+    <statement>
+      <p>
+        OK, good. We have essentially eliminated <m>x</m> from the
+        second and third equation. You have some choice in what comes
+        next, but it might be convenient to make the entry in the second
+        row, second column a <q>1</q>. How would you scale the second
+        row (i.e. multiply it by a nonzero number) to produce a <q>1</q>
+        in that position? 
+      </p>
+    </statement>
+    <solution>
+      <p> Scaling the second row by <m>-1/3</m> gives
+        <md>
+          \left[\begin{array}{rrr|r}
+          1 \amp 1 \amp 2 \amp 1 \\
+          0 \amp 1 \amp 2 \amp 0 \\
+          0 \amp 2 \amp 3 \amp 1 \\
+          \end{array}\right]
+        </md>
+      </p>
+    </solution>
+  </task>
+  <task workspace="1in">
+    <statement>
+      <p>
+        The next step would be to produce a <q>0</q> in the third row,
+        second column. How can you do that? 
+      </p>
+    </statement>
+    <solution>
+      <p> We perform <m>-2R_2+R_3\to R_3</m> so that
+        <md>
+          \left[\begin{array}{rrr|r}
+          1 \amp 1 \amp 2 \amp 1 \\
+          0 \amp 1 \amp 2 \amp 0 \\
+          0 \amp 0 \amp -1 \amp 1 \\
+          \end{array}\right]
+        </md>
+      </p>
+    </solution>
+  </task>
+  <task workspace="3in">
+    <statement>
+      <p>
+        From this point, how can you finish the Gaussian elimination
+        algorithm to find the solution to the original linear system? Be
+        specific about naming each step of the algorithm.
+      </p>
+    </statement>
+    <solution>
+      <p> 
+        <md>
+          <mrow>
+            \left[\begin{array}{rrr|r}
+            1 \amp 1 \amp 2 \amp 1 \\
+            0 \amp 1 \amp 2 \amp 0 \\
+            0 \amp 0 \amp -1 \amp 1 \\
+            \end{array}\right] \amp \sim
+            \left[\begin{array}{rrr|r}
+            1 \amp 1 \amp 2 \amp 1 \\
+            0 \amp 1 \amp 2 \amp 0 \\
+            0 \amp 0 \amp 1 \amp -1 \\
+            \end{array}\right]
+          </mrow>
+          <mrow>
+            \amp \sim 
+            \left[\begin{array}{rrr|r}
+            1 \amp 1 \amp 2 \amp 1 \\
+            0 \amp 1 \amp 0 \amp 2 \\
+            0 \amp 0 \amp 1 \amp -1 \\
+            \end{array}\right]
+          </mrow>
+          <mrow>
+            \amp \sim 
+            \left[\begin{array}{rrr|r}
+            1 \amp 1 \amp 0 \amp 3 \\
+            0 \amp 1 \amp 0 \amp 2 \\
+            0 \amp 0 \amp 1 \amp -1 \\
+            \end{array}\right]
+          </mrow>
+          <mrow>
+            \amp \sim 
+            \left[\begin{array}{rrr|r}
+            1 \amp 0 \amp 0 \amp 1 \\
+            0 \amp 1 \amp 0 \amp 2 \\
+            0 \amp 0 \amp 1 \amp -1 \\
+            \end{array}\right]
+          </mrow>
+        </md>
+      </p>
+    </solution>
+  </task>
+  <task workspace="1in">
+    <statement>
+      <p>
+        What can you say about the set of solutions to this linear
+        system? Is there 0, 1, or infinitely many solutions? 
+      </p>
+    </statement>
+    <solution>
+      <p>There is exactly one solution:  <m>x=1</m>, <m>y=2</m>, and
+      <m>z=-1</m>.</p>
+    </solution>
+  </task>
+</exercise>
+
+<exercise>
+  <statement>
+    <p workspace="3.8in">
+      Rewrite the following linear system as an augmented matrix and
+      find the solution using Gaussian elimination.
+      <md>
+        \begin{alignedat}{4}
+          x \amp  {}+{}  \amp 2y \amp  {}{}  \amp  \amp  {}={}  \amp 2 \\
+          -x \amp  {}{}  \amp  \amp  {}-{}  \amp 4z \amp  {}={}  \amp -6 \\
+          2x \amp  {}+{}  \amp 4y \amp  {}+{}  \amp z \amp  {}={}  \amp 7 \\
+        \end{alignedat}
+      </md>
+    </p>
+  </statement>
+  <solution>
+    <p>We set up an augmented matrix and apply row operations so that
+        <md>
+          <mrow>
+            \left[\begin{array}{rrr|r}
+            1 \amp 2 \amp 0 \amp 2 \\
+            -1 \amp 0 \amp -4 \amp -6 \\
+            2 \amp 4 \amp 1 \amp 7 \\
+            \end{array}\right] \amp \sim
+            \left[\begin{array}{rrr|r}
+            1 \amp 2 \amp 0 \amp 2 \\
+            0 \amp 2 \amp -4 \amp -4 \\
+            2 \amp 4 \amp 1 \amp 7 \\
+            \end{array}\right]
+          </mrow>
+          <mrow>
+            \amp \sim 
+            \left[\begin{array}{rrr|r}
+            1 \amp 2 \amp 0 \amp 2 \\
+            0 \amp 2 \amp -4 \amp -4 \\
+            0 \amp 0 \amp 1 \amp 3 \\
+            \end{array}\right]
+          </mrow>
+          <mrow>
+            \amp \sim 
+            \left[\begin{array}{rrr|r}
+            1 \amp 2 \amp 0 \amp 2 \\
+            0 \amp 1 \amp -2 \amp -2 \\
+            0 \amp 0 \amp 1 \amp 3 \\
+            \end{array}\right]
+          </mrow>
+          <mrow>
+            \amp \sim 
+            \left[\begin{array}{rrr|r}
+            1 \amp 2 \amp 0 \amp 2 \\
+            0 \amp 1 \amp 0 \amp 4 \\
+            0 \amp 0 \amp 1 \amp 3 \\
+            \end{array}\right]
+          </mrow>
+          <mrow>
+            \amp \sim 
+            \left[\begin{array}{rrr|r}
+            1 \amp 0 \amp 0 \amp -6 \\
+            0 \amp 1 \amp 0 \amp 4 \\
+            0 \amp 0 \amp 1 \amp 3 \\
+            \end{array}\right]
+          </mrow>
+        </md>
+      </p>
+    </solution>
+</exercise>
+
+<exercise>
+  <introduction>
+    <p>We will make a few observations about situations that
+    frequently occur.</p>
+  </introduction>
+  <task workspace="1in">
+    <statement>
+      <p>
+        What does the equation <m>0x+0y=0</m> tell us, if anything,
+        about the values of <m>x</m> and <m>y</m>?
+      </p>
+    </statement>
+    <solution>
+      <p>It doesn't tell us anything since any values of <m>x</m> and
+      <m>y</m> cause the equation to be true.
+      </p>
+    </solution>
+  </task>
+  <task workspace="1in">
+    <statement>
+      <p>
+        Suppose that you have a linear system in the variables <m>x</m>
+        and <m>y</m> whose augmented matrix is as below. Describe the
+        solution space in as much detail as possible.
+        <md>
+          \left[
+          \begin{array}{rr|r}
+          1 \amp 0 \amp 3 \\ 
+          0 \amp 1 \amp 0 \\ 
+          0 \amp 0 \amp 0 \\
+          \end{array}
+          \right].
+        </md>
+      </p>
+    </statement>
+    <solution>
+      <p>We can ignore the last row and note that <m>x=3</m> and
+      <m>y=0</m>.</p>
+    </solution>
+  </task>
+</exercise>
+
+<exercise>
+  <statement>
+    <p workspace="1in">
+      Suppose that you have a linear system in the variables <m>x</m>
+      and <m>y</m> whose augmented matrix is as below. Describe the
+      solution space in as much detail as possible. 
+      <md>
+        \left[
+          \begin{array}{rr|r}
+            1 \amp 0 \amp 3 \\ 
+            0 \amp 1 \amp 0 \\ 
+            0 \amp 0 \amp 1 \\
+          \end{array}
+        \right].
+      </md>
+    </p>
+  </statement>
+  <solution>
+    <p>The last row implies that <m>0x+0y=1</m>.  However, there are
+    no values for <m>x</m> and <m>y</m> that cause this equation to be
+    true.  This system therefore has no solutions.</p>
+  </solution>
+</exercise>
+
+<exercise>
+  <introduction>
+    <p>
+      The goal of Gaussian elimination is to create an augmented
+      matrix that is in <em>reduced row echelon form</em>, which means  
+      <ul>
+        <li>If the entries in a row are all zero, then the same is
+        true of any row below it.</li> 
+        <li>If we move across a row from left to right, the first
+        nonzero entry we encounter is 1. We call this entry the
+        <em>leading entry</em> in the row.</li> 
+        <li>The leading entry in any row is to the right of the
+        leading entries in all the rows above it.</li> 
+        <li>A leading entry is the only nonzero entry in its
+        column.</li> 
+      </ul>
+      Consider each of the matrices below and determine whether it is
+      in reduced row echelon form or not. If not, perform a sequence
+      of row operations to find a reduced row echelon form. Then use
+      that form to determine whether the system has 0, 1, or
+      infinitely many solutions. 
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p workspace="0.5in">
+        <md>
+          \left[
+          \begin{array}{ccc|c}
+          1 \amp 0 \amp 0 \amp -1 \\
+          0 \amp 1 \amp 0 \amp 3 \\
+          0 \amp 0 \amp 1 \amp 1 \\
+          \end{array}
+          \right]
+        </md>
+      </p>
+    </statement>
+    <solution>
+      <p>This is in reduced row echelon form.</p>
+    </solution>
+  </task>
+  <task>
+    <statement>
+      <p workspace="0.75in">
+        <md>
+          \left[
+          \begin{array}{ccc|c}
+          1 \amp 2 \amp -1 \amp 2 \\
+          0 \amp 1 \amp -2 \amp 0 \\
+          0 \amp 0 \amp 1 \amp 1 \\
+          \end{array}
+          \right]
+        </md>
+      </p>
+    </statement>
+    <solution>
+      <p>This is not in reduced row echelon form because there are
+      nonzero elements in the columns that have leading entries.
+      <md>
+          \left[
+          \begin{array}{ccc|c}
+          1 \amp 2 \amp -1 \amp 2 \\
+          0 \amp 1 \amp -2 \amp 0 \\
+          0 \amp 0 \amp 1 \amp 1 \\
+          \end{array}
+          \right]\sim
+          \left[
+          \begin{array}{ccc|c}
+          1 \amp 2 \amp 0 \amp 3 \\
+          0 \amp 1 \amp 0 \amp 2 \\
+          0 \amp 0 \amp 1 \amp 1 \\
+          \end{array}
+          \right]\
+          \sim\left[
+          \begin{array}{ccc|c}
+          1 \amp 0 \amp 0 \amp -1 \\
+          0 \amp 1 \amp 0 \amp 2 \\
+          0 \amp 0 \amp 1 \amp 1 \\
+          \end{array}
+          \right]
+      </md>
+      </p>
+    </solution>
+  </task>
+  <task>
+    <statement>
+      <p workspace="0.75in">
+        <md>
+          \left[
+          \begin{array}{ccc|c}
+          2 \amp 0 \amp 4 \amp -8 \\
+          0 \amp 1 \amp 3 \amp 2 \\
+          \end{array}
+          \right]
+        </md>
+      </p>
+    </statement>
+    <solution>
+      <p>We scale the first row by <m>1/2</m> so that
+        <md>
+          \left[
+          \begin{array}{ccc|c}
+          2 \amp 0 \amp 4 \amp -8 \\
+          0 \amp 1 \amp 3 \amp 2 \\
+          \end{array}
+          \right]
+          \sim
+          \left[
+          \begin{array}{ccc|c}
+          1 \amp 0 \amp 2 \amp -4 \\
+          0 \amp 1 \amp 3 \amp 2 \\
+          \end{array}
+          \right]
+        </md>
+      </p>
+    </solution>
+    </task>
+    <task>
+      <statement>
+        <p workspace="1in">
+          <md>
+            \left[
+            \begin{array}{ccc|c}
+            0 \amp 1 \amp 3 \amp 2 \\
+            0 \amp 0 \amp 0 \amp 0 \\
+            1 \amp 0 \amp 4 \amp 2 \\
+            \end{array}
+            \right]
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>We can interchange rows so that
+          <md>
+            \left[
+            \begin{array}{ccc|c}
+            0 \amp 1 \amp 3 \amp 2 \\
+            0 \amp 0 \amp 0 \amp 0 \\
+            1 \amp 0 \amp 4 \amp 2 \\
+            \end{array}
+            \right]
+            \sim
+            \left[
+            \begin{array}{ccc|c}
+            1 \amp 0 \amp 4 \amp 2 \\
+            0 \amp 1 \amp 3 \amp 2 \\
+            0 \amp 0 \amp 0 \amp 0 \\
+            \end{array}
+            \right]
+          </md>
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p workspace="1in">
+          <md>
+            \left[
+            \begin{array}{ccc|c}
+            1 \amp 0 \amp 4 \amp 2 \\
+            0 \amp 1 \amp 3 \amp 2 \\
+            0 \amp 0 \amp 0 \amp 1 \\
+            \end{array}
+            \right]
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>The last row has a leading entry but there are nonzero
+        elements above it:
+          <md>
+            \left[
+            \begin{array}{ccc|c}
+            1 \amp 0 \amp 4 \amp 2 \\
+            0 \amp 1 \amp 3 \amp 2 \\
+            0 \amp 0 \amp 0 \amp 1 \\
+            \end{array}
+            \right]
+            \sim
+            \left[
+            \begin{array}{ccc|c}
+            1 \amp 0 \amp 4 \amp 0 \\
+            0 \amp 1 \amp 3 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 1 \\
+            \end{array}
+            \right]
+          </md>
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+<exercise>
+  <task>
+    <statement>
+      <p workspace="1in">
+        Create, if possible, an augmented matrix in reduced row echelon
+        form that represents a linear system having three equations, two
+        variables, and exactly one solution. If this is not possible,
+        state the reason why. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+            \left[
+            \begin{array}{cc|c}
+            1 \amp 0 \amp -1 \\
+            0 \amp 1 \amp  2 \\
+            0 \amp 0 \amp  0 \\
+            \end{array}
+            \right]
+        </md>
+      </p>
+    </solution>
+  </task>
+  <task>
+    <statement>
+      <p workspace="1in">
+        Create, if possible, an augmented matrix in reduced row echelon
+        form that represents a linear system having four equations, two
+        variables, and no solutions. If this is not possible, state the
+        reason why. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+            \left[
+            \begin{array}{cc|c}
+            1 \amp 0 \amp -1 \\
+            0 \amp 0 \amp 2 \\
+            0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \\
+            \end{array}
+            \right]
+        </md>
+      </p>
+    </solution>
+  </task>
+  <task>
+    <statement>
+      <p workspace="1in">
+        Create, if possible, an augmented matrix in reduced row echelon
+        form that represents a linear system having two equations, four
+        variables, and exactly one solution. If this is not possible,
+        state the reason why. 
+      </p>
+    </statement>
+    <solution>
+      <p>This is not possible since there will always be free variables:
+        <md>
+            \left[
+            \begin{array}{cccc|c}
+            1 \amp 0 \amp * \amp * \amp -1 \\
+            0 \amp 1 \amp * \amp * \amp 2 \\
+            \end{array}
+            \right]
+        </md>
+      </p>
+    </solution>      
+  </task>
+</exercise>
+
+<exercise>
+  <task>
+    <statement>
+      <p workspace="1in">
+        If an augmented matrix is in reduced row echelon form, what does
+        a row whose entries are all zero tell us about the set of
+        solutions? 
+      </p>
+    </statement>
+    <solution>
+      <p>It doesn't tell us anything since any value for the
+      variables will work.</p>
+    </solution>
+  </task>
+  <task>
+    <statement>
+      <p workspace="1in">
+        How can you quickly determine if a linear system has no
+        solutions by looking at the reduced row echelon form of its
+        augmented matrix? 
+      </p>
+    </statement>
+    <solution>
+      <p>If there is a leading entry in the last column, that equation
+      is telling us that <m>0=1</m>, which cannot be true.  Therefore,
+      there are no solutions.
+      </p>
+    </solution>
+  </task>
+</exercise>
+
+<assemblage>
+  <p>Make sure you can answer the following questions:
+  <ul>
+    <li>What are the three row operations we can perform on an
+    augmented matrix without changing the solutions to the system of
+    linear equations?</li> 
+    <li>How does the Gaussian elimination algorithm work?</li> 
+    <li>What is the reduced row echelon of a matrix?</li>
+    <li>How does the reduced row echelon form of an augmented matrix
+    tell us when there are no solutions?</li> 
+    <li>What does a row of all zeroes in the reduced row echelon form
+    of an augmented matrix tell us about the solutions?</li> 
+  </ul>
+  </p>
+</assemblage>
+
+</worksheet>

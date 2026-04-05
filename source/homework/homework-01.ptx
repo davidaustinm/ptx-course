@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="math204-homework"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Written Homework</title>
+
+  <introduction>
+    <p>
+      <term>Math 204-04, -05 Winter 2026</term>
+      <term>Dr. Austin</term>
+    </p>
+    <p>
+      <alert>Directions:</alert> Work through these problems and write
+      up your work explaining it carefully. Homework is due at the
+      beginning of class on Thursdays. This collection of exercises
+      will grow with 2-3 exercises added each week. You will need to
+      regularly download the updated version of this PDF, which can be
+      found on Blackboard in the Written Homework section. 
+    </p>
+  </introduction>
+
+  <exercises>
+  <exercise number="Problem 0">
+    <statement>
+      <p>
+        This problem will not be graded, but you are expected to
+        complete it. Read the
+        <xref ref="homework-expectations" text="custom">Homework Expectations
+        document</xref>.
+      </p>
+      <p>
+        Write three bullet points sharing things you observed about
+        these expectations.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise number="Problem 1">
+    <introduction>
+      <p>
+        Consider each matrix below and determine if it is in reduced row echelon form. If not, indicate the reason and demonstrate a sequence of row operations to find its reduced row echelon matrix. For each matrix, explain why the corresponding linear system has either infinitely many solutions, exactly one solution, or no solutions.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        <md>
+          \left[ \begin{array}{ccc|c} 1 \amp 0 \amp 2 \amp 0 \\ 0 \amp 2 \amp -4 \amp 2 \\ 0 \amp -1 \amp 2 \amp 3 \\ \end{array} \right]
+        </md>
+      </p>
+    </task>
+    <task>
+      <p>
+        <md>
+          \left[ \begin{array}{ccc|c} 1 \amp 0 \amp 2 \amp 0 \\ 0 \amp 2 \amp -4 \amp 2 \\ 0 \amp -1 \amp 2 \amp -1 \\ \end{array} \right]
+        </md>
+      </p>
+    </task>
+    <task>
+      <p>
+        <md>
+          \left[ \begin{array}{ccc|c} 1 \amp 0 \amp 2 \amp 0 \\ 0 \amp 2 \amp -4 \amp 2 \\ 0 \amp -1 \amp 3 \amp -1 \\ \end{array} \right]
+        </md>
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 2">
+    <introduction>
+      <p>
+        For each of the following, give an example of an augmented matrix in reduced row echelon form that describes a linear system having the stated properties. For each, write at least one sentence that explains why your example meets the stated criteria. If it is not possible to find such an example, explain why not.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        A linear system having 4 equations and 2 variables and having exactly one solution.
+      </p>
+    </task>
+    <task>
+      <p>
+        A linear system having 3 equations and 3 variables and having no solution.
+      </p>
+    </task>
+    <task>
+      <p>
+        A linear system having 2 equations and 5 variables and having infinitely many solutions.
+      </p>
+    </task>
+    <task>
+      <p>
+        A linear system having 3 equations and 5 variables and having exactly one solution.
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 3">
+    <introduction>
+      <p>
+        For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use Sage to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        <md>
+          \begin{array}{rcrcrcr} x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\ 3x \amp + \amp 2y \amp - \amp 4z \amp = \amp 7 \\ 9x \amp + \amp 3y \amp - \amp z \amp = \amp -4 \\ -2x \amp - \amp y \amp + \amp 8z \amp = \amp 0 \end{array}
+        </md>
+      </p>
+    </task>
+    <task>
+      <p>
+        <md>
+          \begin{array}{rcrcrcrcr} x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\ x_1 \amp - \amp 2x_2 \amp + \amp x_3 \amp \amp \amp = \amp 5 \end{array}
+        </md>
+      </p>
+    </task>
+    <task>
+      <p>
+        <md>
+          \begin{array}{rcrcrcrcr} x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\ x_1 \amp - \amp 2x_2 \amp + \amp x_3 \amp \amp \amp = \amp 5 \\ -2x_1 \amp + \amp 1x_2 \amp - \amp 3x_3 \amp + \amp x_4 \amp = \amp -1 \\ -x_1 \amp - \amp 4x_2 \amp + \amp 2x_3 \amp + \amp 5x_4 \amp = \amp 0 \\ \end{array}
+        </md>
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 4">
+    <introduction>
+      <p>
+        Consider the vectors
+        <md>\vvec_1=\threevec{3}{-1}{1}, ~~~
+        \vvec_2=\threevec{1}{1}{2}.</md> 
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Construct the linear combination with weights <m>c_1=2</m> and <m>c_2=-3</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Can the vector <m>\threevec{17}{1}{14}</m> be written as a linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>? If so, find a set of weights.
+      </p>
+    </task>
+    <task>
+      <p>
+        For what value(s) of <m>k</m>, if any, can the vector <m>\threevec{k}{-2}{5}</m> be written as a linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>?
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 5">
+    <introduction>
+      <p>
+        Consider the matrix <md>A = \begin{bmatrix} 1 \amp 2 \amp -4 \amp -4 \\ 2 \amp 3 \amp 0 \amp 1 \\ 1 \amp 0 \amp 4 \amp 6 \\ \end{bmatrix}.</md>
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Find the product <m>A\xvec</m> when <m>\xvec=\left[\begin{array}{r}1 \\ -2 \\ 0 \\ 2 \end{array}\right]</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Find all vectors <m>\xvec</m> such that <md>A\xvec = \threevec{-1}{15}{17}.</md>
+      </p>
+    </task>
+    <task>
+      <p>
+        Find the reduced row echelon form of <m>A</m> and identify its pivot positions.
+      </p>
+    </task>
+    <task>
+      <p>
+        Is it possible to find a vector <m>\bvec</m> such that the equation <m>A\xvec=\bvec</m> is inconsistent? Explain your thinking.
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 6">
+    <introduction>
+      <p>
+        Suppose that <m>A</m> is the <m>3\times 2</m> matrix whose columns are <m>\vvec_1</m> and <m>\vvec_2</m>; that is, <md>A = \begin{bmatrix}\vvec_1 \amp \vvec_2 \end{bmatrix}.</md>
+      </p>
+    </introduction>
+    <task>
+      <p>
+        What is the dimension of the vectors <m>\vvec_1</m> and <m>\vvec_2</m>?
+      </p>
+    </task>
+    <task>
+      <p>
+        What is the product <m>A\twovec{1}{0}</m> in terms of <m>\vvec_1</m> and <m>\vvec_2</m>? What is the product <m>A\twovec{0}{1}</m> in terms of <m>\vvec_1</m> and <m>\vvec_2</m>? What is the product <m>A\twovec{2}{3}</m>?
+      </p>
+    </task>
+    <task>
+      <p>
+        Suppose we know that <md>A\twovec{1}{0}=\threevec{3}{-2}{1},
+        ~~~A\twovec{0}{1}=\threevec{0}{3}{2}.</md> What is
+        the matrix <m>A</m> and what is the product
+        <m>A\twovec{2}{3}</m>? Explain your thinking. 
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 7">
+    <introduction>
+      <p>
+        Consider the vectors <m>\uvec = \threevec{1}{0}{-1}</m>, <m>\vvec = \threevec{0}{-1}{1}</m>, and <m>\wvec = \threevec{2}{-3}{1}</m>.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Is <m>\bvec = \threevec{-5}{7}{-3}</m> in Span<m>\{ \uvec, \vvec, \wvec \}</m>? Explain your thinking.
+      </p>
+    </task>
+    <task>
+      <p>
+        Is <m>\cvec = \threevec{-5}{7}{-2}</m> in Span<m>\{ \uvec, \vvec, \wvec \}</m>? Explain your thinking.
+      </p>
+    </task>
+    <task>
+      <p>
+        Do the vectors <m>\uvec, \vvec, \wvec</m> span all of <m>\real^3</m>? Explain your thinking.
+      </p>
+    </task>
+    <task>
+      <p>
+        Explain why <m>\text{Span}\{ \uvec, \vvec, \wvec \} = \text{Span}\{\uvec,\vvec\}</m>.
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 8">
+    <introduction>
+      <p>
+        Suppose that <m>A</m> is a <m>12\times12</m> matrix (12 rows and 12 columns) and that, for some vector <m>\bvec</m> in <m>\real^{12}</m>, the equation <m>A\xvec=\bvec</m> has exactly one solution.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        What can you conclude about the pivot positions of <m>A</m>? Explain your response.
+      </p>
+    </task>
+    <task>
+      <p>
+        What can you conclude about the span of the columns of <m>A</m>? Explain your response.
+      </p>
+    </task>
+    <task>
+      <p>
+        If <m>\cvec</m> is another vector in <m>\real^{12}</m>, what, if anything, can you conclude about the solutions to the equation <m>A\xvec=\cvec</m>? Explain your response.
+      </p>
+    </task>
+    <task>
+      <p>
+        What can you conclude about the solutions to the equation <m>A\xvec=\zerovec</m>?
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 9">
+    <introduction>
+      <p>
+        Let the vectors <m>\uvec</m>, <m>\vvec</m>, <m>\wvec</m>, and <m>\zvec</m> be given by <md>\uvec = \threevec{2}{1}{-1}, \ \vvec = \threevec{-3}{-1}{2}, \ \wvec = \threevec{0}{1}{1}, \ \zvec = \threevec{-1}{0}{4}</md>
+      </p>
+    </introduction>
+    <task>
+      <introduction>
+        <p>
+          Determine whether each of the following sets of vectors is linearly dependent or linearly independent. Give a clear justification of each conclusion, including any relevant computations you use.
+        </p>
+      </introduction>
+      <task>
+        <p><m>\{ \uvec, \vvec \}</m></p>
+      </task>
+      <task>
+        <p><m>\{ \uvec, \vvec, \wvec \}</m></p>
+      </task>
+      <task>
+        <p><m>\{ \uvec, \vvec, \wvec, \zvec \}</m></p>
+      </task>
+    </task>
+    <task>
+      <p>
+        Can you find a set of <em>exactly three</em> vectors among <m>\uvec</m>, <m>\vvec</m>, <m>\wvec</m>, and <m>\zvec</m> that is linearly independent? Explain your thinking.
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 10">
+    <introduction>
+      <p>
+        Consider the matrix transformation <m>T:\real^2\to\real^2</m>
+        that takes a two-dimensional vector <m>\xvec</m> and turns it
+        into a new two-dimensional vector <m>T(\xvec) =
+        A\xvec</m>. Suppose we know that <md>
+        T\left(\twovec{1}{1}\right) = \twovec{3}{-2},~~~~~~
+        T\left(\twovec{-1}{1}\right) = \twovec{1}{2}. </md>
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Express <m>\twovec{1}{0}</m> as a linear combination of <m>\twovec{1}{1}</m> and <m>\twovec{-1}{1}</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Use the linearity property of matrix multiplication to determine <m>T\left(\twovec{1}{0}\right)</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        In the same way, express <m>\twovec{0}{1}</m> as a linear combination of <m>\twovec{1}{1}</m> and <m>\twovec{-1}{1}</m> and use the linearity property of matrix multiplication to determine <m>T\left(\twovec{0}{1}\right)</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        What is the matrix <m>A</m> so that <m>T(\xvec)=A\xvec</m>?
+      </p>
+    </task>
+    <task>
+      <p>
+        Find <m>T\left(\twovec{4}{-5}\right)</m>.
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 11">
+    <introduction>
+      <p>
+        Let <m>S: \real^2 \to \real^2</m> be the matrix transformation that reflects vectors across the line <m>y = x</m>, and let <m>R:\real^2 \to \real^2</m> be the transformation that rotates vectors by <m>90^\circ</m> clockwise about the origin.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Determine the matrices <m>B</m> and <m>C</m> such that <m>S(\xvec) = B\xvec</m> and <m>R(\xvec) = C\xvec</m>. Show your work in finding these matrices.
+      </p>
+    </task>
+    <task>
+      <p>
+        Consider the new transformation <m>T</m> that is defined by first reflecting in the line <m>y=x</m> and then rotating <m>90^\circ</m> clockwise. That is, <m>T</m> is the composition <m>T(\xvec) = R(S(\xvec))</m>. Use matrix multiplication to determine the matrix <m>M</m> for which <m>T(\xvec) = M\xvec</m>. Clearly show your work and thinking.
+      </p>
+    </task>
+    <task>
+      <p>
+        For the transformation <m>T</m> defined in (b) as the composition of <m>R</m> and <m>S</m>, what is the geometric effect that <m>T</m> has on vectors; that is, how is <m>T(\xvec)</m> geometrically related to <m>\xvec</m>?
+      </p>
+    </task>
+    <task>
+      <p>
+        Suppose that you first rotate using <m>R</m> and then reflect using <m>S</m> to obtain a new transformation <m>Q:\real^2\to\real^2</m>. Find the matrix <m>N</m> so that <m>Q(\xvec) = N\xvec</m>. What is the geometric effect that <m>Q</m> has on vectors?
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 12">
+    <introduction>
+      <p>
+        Consider the vectors <m>\vvec_1</m> and <m>\vvec_2</m> given in the figure below and let <m>\mathcal{B} = \{ \vvec_1, \vvec_2 \}</m>.
+        <image width="60%">
+          <shortdescription>Two vectors that form a basis of R 2 and
+          the skewed grid representing their linear
+          combinations</shortdescription>
+          <description>
+            <p>This diagram show two vectors <m>\vvec_1=\twovec21</m> and
+            <m>\vvec_2=\twovec{-2}2</m> 
+            in the plane <m>\real^2</m> and a skewed coordinate
+            grid representing the linear combinations of these basis
+            vectors.
+            </p>
+          </description>
+          <prefigure xmlns="https://prefigure.org"
+                     label="prefigure-grid">
+            <xi:include href="coordinates.xml"/>
+          </prefigure>
+        </image>
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Explain why <m>\mathcal{B} = \{ \vvec_1, \vvec_2 \}</m> is a basis for <m>\real^2</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        On the figure, plot the vectors <m>\xvec</m>, <m>\yvec</m>, and <m>\zvec</m> that respectively satisfy <m>\{\xvec\}_{\mathcal{B}} = \twovec{2}{2}</m>, <m>\{\yvec\}_{\mathcal{B}} = \twovec{-2}{-1}</m>, and <m>\{\zvec\}_{\mathcal{B}} = \twovec{-1}{2}</m>. Write at least one sentence that explains how you determined the vectors that you plotted.
+      </p>
+    </task>
+    <task>
+      <p>
+        Using the figure, determine <m>\{\avec\}_{\mathcal{B}}</m>, <m>\{\bvec\}_{\mathcal{B}}</m>, and <m>\{\cvec\}_{\mathcal{B}}</m> for the vectors <m>\avec = \twovec{-6}{0}</m>, <m>\bvec = \twovec{0}{-6}</m>, and <m>\cvec = \twovec{4}{5}</m>. Again, write at least one sentence that explains how you determined your results.
+      </p>
+    </task>
+    <task>
+      <p>
+        In addition, find <m>\{\uvec\}_{\mathcal{B}}</m> if <m>\uvec = \twovec{600}{900}</m>, and find <m>\vvec</m> if <m>\{\vvec\}_{\mathcal{B}} = \twovec{-70}{105}</m>.
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 13">
+    <introduction>
+      <p>
+        Provide a justification for each of your responses to the following prompts.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Using determinants, explain the following fact: <em>If <m>A</m> and <m>B</m> are both invertible matrices of the same shape, then their product <m>AB</m> is also invertible.</em>
+      </p>
+    </task>
+    <task>
+      <p>
+        Using determinants, explain the following fact: <em>If <m>A</m> and <m>B</m> are two matrices of the same shape and their product <m>AB</m> is invertible, then both <m>A</m> and <m>B</m> are invertible.</em>
+      </p>
+    </task>
+    <task>
+      <introduction>
+        <p>
+          Suppose that we start with a matrix <m>A</m> and perform these row operations:
+        </p>
+        <ul>
+          <li>Row replacement: <m>-3R_1 + R_2 \to R_2</m></li>
+          <li>Scaling: <m>\frac{1}{4} R_2 \to R_2</m></li>
+          <li>Row replacement: <m>5R_2 + R_3 \to R_3</m></li>
+          <li>Interchange: <m>R_3 \leftrightarrow R_4</m></li>
+        </ul>
+        <p>
+          and that we end up with <md> U = \begin{bmatrix} 2 \amp 3 \amp -1 \amp -2 \\ 0 \amp 6 \amp -1 \amp 0 \\ 0 \amp 0 \amp -3 \amp 1 \\ 0 \amp 0 \amp 0 \amp 2 \end{bmatrix} </md>.
+        </p>
+      </introduction>
+      <p>
+        Find the determinant <m>\det(A)</m>.
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 14">
+    <introduction>
+      <p>
+        Suppose that <m>B</m> is a matrix <m>B = \begin{bmatrix} \vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4 \amp \vvec_5 \end{bmatrix}</m> and that its reduced row echelon form is <md> B \sim \begin{bmatrix} 1 \amp 0 \amp -3 \amp -7 \amp 0 \\ 0 \amp 1 \amp 0 \amp 6 \amp 0 \\ 0 \amp 0 \amp 0 \amp 0 \amp 1 \\ 0 \amp 0 \amp 0 \amp 0 \amp 0 \\ \end{bmatrix}. </md>
+      </p>
+    </introduction>
+    <task>
+      <p>
+        If <m>\xvec</m> is a solution to the equation <m>B\xvec = \zerovec</m>, what is the dimension of <m>\xvec</m> and why?
+      </p>
+    </task>
+    <task>
+      <p>
+        Give a vector-parametric description of the solution set to the equation <m>B\xvec = \zerovec</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Find a basis for the null space <m>\text{Nul}(B)</m>. Be sure to explain why your set of vectors satisfies the properties of a basis.
+      </p>
+    </task>
+    <task>
+      <p>
+        Find a basis for <m>\text{Col}(B)</m> among the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, <m>\vvec_3</m>, <m>\vvec_4</m>, and <m>\vvec_5</m>.
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 15">
+    <introduction>
+      <p>
+        Consider the matrix <m> A=\begin{bmatrix} -2 \amp 6 \\ -2 \amp 5 \\ \end{bmatrix} </m>.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Without using Sage, find the characteristic polynomial <m>\det(A-\lambda I)</m>. Then use the characteristic polynomial to find the eigenvalues of <m>A</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        For each eigenvalue, find a basis for the associated eigenspace.
+      </p>
+    </task>
+    <task>
+      <introduction>
+        <p>
+          Now consider the matrix <m> B=\begin{bmatrix} 2 \amp -3 \amp 1 \\ 0 \amp -3 \amp 4 \\ 0 \amp 0 \amp 1 \end{bmatrix} </m>.
+        </p>
+      </introduction>
+      <p>
+        Find the characteristic polynomial and use it to find the eigenvalues of <m>B</m>.
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 16">
+    <introduction>
+      <p>
+        Consider the matrix <m>A = \begin{bmatrix} 8 \amp -10 \\ 5 \amp -7 \\ \end{bmatrix}</m>.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Find a basis for <m>\real^2</m> consisting of eigenvectors of <m>A</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Express the vector <m>\xvec=\twovec{-4}{-1}</m> as a linear combination of eigenvectors of <m>A</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        Use this expression to find <m>A\xvec</m>, <m>A^2\xvec</m>, and <m>A^{-1}\xvec</m> as a linear combination of eigenvectors.
+      </p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 17">
+    <introduction>
+      <p>
+        Consider the matrix <m>A = \begin{bmatrix} -2 \amp -2 \\ -2 \amp 1 \\ \end{bmatrix}</m>.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Find the characteristic polynomial of <m>A</m> and use it to find the eigenvalues of <m>A</m>.
+      </p>
+    </task>
+    <task>
+      <p>For each eigenvalue, find a basis for the corresponding eigenspace.</p>
+    </task>
+    <task>
+      <p>
+        Is <m>A</m> diagonalizable? If so, what are the matrices <m>P</m> and <m>D</m> such that <m>A=PDP^{-1}</m>?
+      </p>
+    </task>
+    <task>
+      <p>Find a diagonalization of <m>A^{10}</m>.</p>
+    </task>
+    <task>
+      <p>
+        What do the eigenvalues tell you about the invertibility of <m>A</m>?
+      </p>
+    </task>
+    <task>
+      <p>Find a diagonalization of <m>A^{-1}</m>.</p>
+    </task>
+  </exercise>
+
+  <exercise number="Problem 18">
+    <introduction>
+      <p>
+        Consider the stochastic matrix <m>A = \begin{bmatrix} 0.8 \amp 1 \\ 0.2 \amp 0 \\ \end{bmatrix}</m>.
+      </p>
+    </introduction>
+    <task>
+      <p>Find the eigenvalues and associated eigenvectors of <m>A</m>.</p>
+    </task>
+    <task>
+      <p>
+        Find matrices <m>P</m> and <m>D</m> so that <m>A=PDP^{-1}</m>.
+      </p>
+    </task>
+    <task>
+      <p>
+        As <m>k</m> becomes very large, what happens to <m>D^k</m>? That is, what is <m>D^\infty</m>?
+      </p>
+    </task>
+    <task>
+      <p>Use this to find <m>A^\infty</m>?</p>
+    </task>
+    <task>
+      <p>
+        Suppose that a rental car company has 120 cars that are
+        distributed at two locations <m>P</m> and <m>Q</m>, that we
+        record the distribution of cars at the two locations on day
+        <m>k</m> using the state vector
+        <m>\xvec_k=\twovec{P_k}{Q_k}</m>, and that <m>\xvec_{k+1} =
+        A\xvec_k</m>. Without knowing the initial distribution of
+        cars, what happens to the distribution of cars after a long
+        time?
+      </p>
+    </task>
+  </exercise>
+  </exercises>
+</chapter>
+

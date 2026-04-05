@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="intro-linear-systems"
+           xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to linear systems</title>
+
+  <p><alert>MTH 204:  January 13</alert></p>
+
+  <introduction>
+    <p>
+      This course is about <em>linear equations</em>. An
+      example of a linear equation is <m>2x + 3y = -1</m>. Notice that
+      variables are not squared or multiplied
+      together; the equation is just formed by multiplying the
+      variables by coefficients and adding. The equation
+      <m>\sin(e^x+y) = 10</m> is not linear. 
+    </p>
+  </introduction>
+
+  <exercise>
+    <introduction>
+      <p>
+        To get started, let's begin with a single linear equation
+        <md>
+          y = x+1
+        </md>.
+      </p>
+    </introduction>
+    <task>
+      <p>
+        Plot the solutions to this equation below. What can you say
+        about the number of points <m>(x,y)</m> that satisfy this
+        equation?
+      </p>
+      <image width="40%">
+        <shortdescription>A coordinate grid and set of
+        axes</shortdescription>
+        <description><p>A coordinate grid and set of axes.  Both the
+        horizontal and vertical axes runs from negative four to
+        positive four.</p>
+        </description>
+          
+        <prefigure xmlns="https://prefigure.org"
+                   label="empty-4-01-1">
+          <xi:include href="prefigure/empty-4.xml"/>
+        </prefigure>
+      </image>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Now we'll add another equation so that we're considering a
+          <em>system</em> of two linear equations:
+          <md>
+            \begin{aligned}
+            y \amp = x+1 \\
+            y \amp = x-1\text{.} \\
+            \end{aligned}
+          </md>
+        </p>
+        <p>
+          Plot the two lines below. How many points <m>(x,y)</m> satisfy
+          both equations?
+          <image width="40%">
+            <shortdescription>A coordinate grid and set of
+            axes</shortdescription>
+            <description><p>A coordinate grid and set of axes.  Both the
+            horizontal and vertical axes runs from negative four to
+            positive four.</p>
+            </description>
+            
+            <prefigure xmlns="https://prefigure.org"
+                       label="empty-4-01-2">
+              <xi:include href="prefigure/empty-4.xml"/>
+            </prefigure>
+          </image>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Here's another system. Plot the two lines and
+          determine how many points <m>(x,y)</m> satisfy both equations.
+          <md>
+            \begin{aligned}
+            y \amp = x+1 \\
+            y \amp = 2x-1\text{.} \\
+            \end{aligned}
+          </md>
+          <image width="40%">
+            <shortdescription>A coordinate grid and set of
+            axes</shortdescription>
+            <description><p>A coordinate grid and set of axes.  Both the
+            horizontal and vertical axes runs from negative four to
+            positive four.</p>
+            </description>
+            
+            <prefigure xmlns="https://prefigure.org"
+                       label="empty-4-01-3">
+              <xi:include href="prefigure/empty-4.xml"/>
+            </prefigure>
+          </image>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Here's a system of three equations. 
+          <md>
+            \begin{aligned}
+            y \amp = x+1 \\
+            y \amp = 2x-1 \\
+            y \amp = -x.
+            \end{aligned}
+          </md>
+        </p>
+        <p>Create the plot and determine the number of points that
+        satisfy all three equations.
+        <image width="40%">
+          <shortdescription>A coordinate grid and set of
+          axes</shortdescription>
+          <description><p>A coordinate grid and set of axes.  Both the
+          horizontal and vertical axes runs from negative four to
+          positive four.</p>
+          </description>
+          
+          <prefigure xmlns="https://prefigure.org"
+                     label="empty-4-01-4">
+            <xi:include href="prefigure/empty-4.xml"/>
+          </prefigure>
+        </image>
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Circle the possibilities below:
+        <blockquote>
+          <p>
+            <em>
+              Given a system of linear equations, what are the
+              possibilities for the number of points that satisfy all
+              the equations:
+              <md>
+                0 \hspace{0.5in} 1 \hspace{0.5in} 2 \hspace{0.5in} 3
+                \hspace{0.5in} 4 \hspace{0.5in} 5 \hspace{0.5in}
+                \ldots \hspace{0.5in} \infty
+              </md>
+            </em>
+          </p>
+        </blockquote>
+      </p>
+      <p workspace="1in">
+        Generally speaking, as we add more equations, what happens to
+        the number of solutions?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p workspace="1.5in">
+        Instead of graphing, let's try to determine the solutions to a
+        system of linear equations algebraically.
+        <md>
+          \begin{aligned}
+          x + 2y \amp = -1 \\
+          2x - y \amp = 8
+          \end{aligned}
+        </md>
+        To do this, solve the first equation for <m>x</m> and
+        substitute it into the second equation. The
+        resulting equation only depends on <m>y</m> so you should be
+        able to solve it in the usual way.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        For the following linear systems, determine the number of
+        solutions. If there is exactly one solution, state what that
+        solution is, such as <m>(x,y,z)=(1,-3,4)</m>.
+      </p>
+    </introduction>
+    <task>
+      <p workspace="0.5in">
+        <md>
+        \begin{alignedat}{4}
+        x \amp {} {} \amp  \amp {}{} \amp \amp {}={} \amp -3 \\
+        \amp \amp y \amp {}{} \amp  \amp {}={} \amp 2 \\
+        \amp \amp \amp \amp z \amp {}={} \amp 4. \\
+        \end{alignedat}
+        </md>
+      </p>
+    </task>
+    <task>
+      <p workspace="0.5in">
+        <md>
+        \begin{alignedat}{4}
+        \amp \amp y \amp {}{} \amp  \amp {}={} \amp 2 \\
+        \amp \amp \amp \amp z \amp {}={} \amp 4 \\
+        x \amp {} {} \amp  \amp {}{} \amp \amp {}={} \amp -3.
+        \end{alignedat}
+        </md>
+      </p>
+    </task>
+    <task>
+      <p workspace="0.5in">
+        <md>
+        \begin{alignedat}{4}
+        2x \amp {} {} \amp  \amp {}{} \amp \amp {}={} \amp 4 \\
+        \amp \amp -3y \amp {}{} \amp  \amp {}={} \amp 3 \\
+        \amp \amp \amp \amp -z \amp {}={} \amp 1. \\
+        \end{alignedat}
+        </md>
+      </p>
+    </task>
+    <task>
+      <p workspace="1in">
+        <md>
+        \begin{alignedat}{4}
+        -x \amp {} + {} \amp 2y \amp {}-{} \amp z \amp {}={} \amp -3 \\
+        \amp \amp 3y \amp {}+{} \amp z \amp {}={} \amp -1 \\
+        \amp \amp \amp \amp 2z \amp {}={} \amp 4. \\
+        \end{alignedat}
+        </md>
+      </p>
+    </task>
+    <task>
+      <p workspace="1.25in">
+        <md>
+        \begin{alignedat}{4}
+        x \amp  {}+{}  \amp 2y \amp {}+{}  \amp z  \amp  {}={}  \amp 4 \\
+        \amp         \amp y \amp  {}-{}  \amp 3z \amp  {}={}  \amp 11 \\
+        \end{alignedat}
+        </md>
+      </p>
+    </task>
+    <task>
+      <p workspace="0.7in">
+        <m>0x {}={} 0</m>
+      </p>
+    </task>
+    <task>
+      <p workspace="0.7in">
+        <m>0x {}={} 3</m>
+      </p>
+    </task>
+    <task>
+      <p workspace="0.5in">
+        <m>0x+0y+0z {}={} 1</m>
+      </p>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p workspace="1.5in">
+        Consider the following system of linear equations and follow
+        these directions carefully:
+        <md>
+          \begin{alignedat}{4}
+          x \amp  {}+{}  \amp 2y \amp  \amp  \amp  {}={}  \amp 4 \\
+          2x \amp  {}+{}  \amp y \amp  {}-{}  \amp 3z \amp  {}={}  \amp 11 \\
+          \end{alignedat}
+        </md>
+        Solve the first equation for <m>x</m> and substitute it into
+        the second equation. Then write the new system of equations
+        that results.
+      </p>
+      <p workspace="1in">
+        Notice how we wrote the equations with the variables arranged
+        in columns. As a shorthand, we will record the
+        system of equations in an <em>augmented matrix</em>.
+        For instance, the original set of two equations can be
+        written as 
+        <md>
+          \left[ \begin{array}{ccc|c} 1 \amp 2 \amp 0 \amp 4 \\ 2 \amp 1 \amp -3 \amp 11 \\ \end{array}\right]
+        </md>
+        Each row corresponds to an equation, the vertical bar
+        represents the equals sign, and each column left of the bar
+        corresponds to a variable. Write the augmented
+        matrix for the system you found after solving for <m>x</m> and
+        substituting it into the second equation.
+      </p>
+      <p workspace="1.5">
+        In terms of augmented matrices, the process of solving for
+        <m>x</m> and substituting into the second equation can be more
+        easily performed by multiplying the first row of the augmented
+        matrix by <m>-2</m> and adding it to the second row (this
+        changes only the second row). Verify that this
+        results in the same augmented matrix you found above.
+        How do you see that <m>x</m> has been eliminated from
+        the second equation?
+      </p>
+      <p>
+        This process is called a <em>row replacement</em>
+        operation. We can also <em>interchange</em> two
+        rows, which corresponds to writing the equations in a
+        different order, and <em>scale</em> a row by multiplying it by
+        a nonzero number.
+      </p>
+    </statement>
+  </exercise>
+
+  <assemblage>
+    <p>Make sure you can answer the following questions:
+    <ul>
+      <li>What is a linear equation and what is a system of linear
+      equations?</li>
+      <li>What are the three possibilities for the number of solutions
+      to a system of linear equations?</li> 
+      <li>How does this number of solutions typically change as we add
+      more equations?</li> 
+      <li>What is an augmented matrix and how does it represent a
+      system of linear equations?</li> 
+      <li>What are three operations we can perform on an augmented
+      matrix without changing the solution?</li> 
+    </ul>
+    </p>
+  </assemblage>
+
+</worksheet>

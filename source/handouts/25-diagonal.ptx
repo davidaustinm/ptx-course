@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>MTH 406: Generalized eigenspaces</title>
+
+  <introduction>
+  <p>
+    Suppose that <m>T:V \to V</m> is an operator with minimal polynomial 
+    <m>p(x)=(x-\lambda)^k q(x)</m> with <m>q(\lambda)\neq 0</m>. Then <m>\lambda</m> is
+    an eigenvalue and
+  </p>
+
+  <me>
+    G_\lambda = \nul((T-\lambda I)^k)
+  </me>
+
+  <p>
+    is called the <em>generalized eigenspace</em>. An element <m>\vvec</m> in
+    <m>G_\lambda</m> is called a <em>generalized eigenvector</em>.
+  </p>
+
+  </introduction>
+  <exercise>
+    <introduction>
+      <p>We will first show that generalized eigenspaces associated to
+      different eigenvalues intersect only in the zero vector.
+      </p>
+    </introduction>
+
+    <task workspace="0.5in">
+      <p>
+        Suppose that <m>\vvec</m> is a generalized eigenvector with
+        eigenvalue <m>\lambda</m>. Explain why <m>(T-\lambda I)^k\vvec = 0</m>.
+      </p>
+    </task>
+    
+    <task workspace="0.5in">
+      <p>
+        What can you conclude about the annihilating polynomial <m>p_\vvec</m>?
+      </p>
+    </task>
+    
+    <task workspace="0.5in">
+      <p>
+        Suppose that <m>\lambda</m> and <m>\mu</m> are two distinct eigenvalues. Use
+        these observations to explain why <m>G_\lambda \cap G_\mu = \{0\}</m>.
+      </p>
+    </task>
+  </exercise>
+  
+  <exercise>
+    <introduction>
+      <p>
+        Suppose that <m>\dim V = 4</m> and <m>V_1</m> and <m>V_2</m>
+        are subspaces of 
+        <m>V</m> with <m>\dim V_1 = 3</m> and <m>\dim V_2 =
+        2</m>. Then there are bases 
+        <m>\{\vvec_1,\vvec_2,\vvec_3\}</m> for <m>V_1</m> and 
+        <m>\{\vvec_4,\vvec_5\}</m> for <m>V_2</m>.
+      </p>
+    </introduction>
+    <task workspace="1in">
+      <p>
+        Explain why the set
+        <me>
+          \{\vvec_1,\vvec_2,\vvec_3,\vvec_4,\vvec_5\}
+        </me>
+        is linearly dependent.
+      </p>
+    </task>
+
+    <task workspace="1in">
+      <p>
+        Use this fact to show that <m>V_1 \cap V_2 \neq \{0\}</m>.
+      </p>
+    </task>
+
+    <task workspace="1in">
+      <p>
+        Suppose that <m>p(x)=(x-2)^3(x-4)^2</m>. If <m>\wvec</m> is in
+        <m>\range((T-4I)^2)</m>, explain why <m>(T-2I)^3(\wvec) = 0</m>.
+      </p>
+    </task>
+
+    <task workspace="1in">
+      <p>
+        Explain why <m>\range((T-4I)^2) \subset \nul((T-2I)^3) = G_2</m> and
+        hence <m>\dim \range((T-4I)^2) \leq \dim G_2</m>.
+      </p>
+    </task>
+
+    <task workspace="1in">
+      <p>
+        Explain why
+      <me>
+        \dim G_4 + \dim \range((T-4I)^2) = \dim V.
+      </me>
+      </p>
+    </task>
+
+    <task>
+      <p>
+        Explain why
+      <me>
+        \dim G_4 + \dim G_2 \geq \dim V.
+      </me>
+      </p>
+    </task>
+
+    <task workspace="1in">
+      <p>
+        Since <m>G_4 \cap G_2 = \{0\}</m>, explain why 
+        <m>\dim G_4 + \dim G_2 = \dim V</m>.
+      </p>
+    </task>
+
+    <task workspace="1in">
+      <p>
+        Explain why <m>G_4 \oplus G_2 = V</m>.
+      </p>
+    </task>
+
+    <task workspace="1in">
+      <p>
+        Explain why both <m>G_4</m> and <m>G_2</m> are <m>T</m>-invariant.
+      </p>
+    </task>
+
+    <task workspace="1in">
+      <p>
+        If <m>\bcal</m> is a basis for <m>G_4</m> and <m>\ccal</m> is
+        a basis for <m>G_2</m>, 
+        then <m>\dcal=\bcal\cup\ccal</m> is a basis for
+        <m>V</m>. Explain why 
+      <me>
+        \coords{T}{\dcal,\dcal} =
+        \begin{bmatrix}
+        \coords{T}{\bcal,\bcal} &amp; \zerovec \\
+        \zerovec &amp; \coords{T}{\ccal,\ccal}
+        \end{bmatrix}.
+      </me>
+      </p>
+    </task>
+  </exercise>
+    <conclusion>
+      <p>
+        What you have found here is generally true: If the minimal polynomial
+      <me>
+        p(x) =
+        (x-\lambda_1)^{k_1}(x-\lambda_2)^{k_2}\ldots(x-\lambda_m)^{k_m},
+      </me>,
+        then
+      <me>
+        V = G_{\lambda_1} \oplus G_{\lambda_2} \oplus \ldots \oplus
+        G_{\lambda_m}
+      </me>
+        and there is a basis for <m>V</m> such that the matrix representing <m>T</m>
+        is a block matrix where the blocks on the diagonal are
+        representations of <m>T|_{G_{\lambda_j}}</m>.
+      </p>
+    </conclusion>
+</worksheet>

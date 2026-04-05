@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="targets" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Learning targets</title>
+
+
+  <p>
+    <ol>
+      <li><p>
+        I can execute the next 2-3 steps of Gaussian elimination by
+        hand that are needed to work toward RREF (and recognize that
+        additional steps are needed to achieve RREF), and identify
+        which row operations were used. (Section 1.2).</p>
+      </li>
+      <li><p>
+        I can use information about pivots to make conclusions about
+        the solutions of a system of linear equations, and explain the
+        underlying reasoning (using appropriate terminology) regarding
+        the existence and uniqueness of solutions and consistency or
+        inconsistency of a system. (Section 1.4)</p>
+      </li>
+      <li><p>
+        I can determine if and how a given vector can be written as a
+        linear combination of a given set of vectors and explain what
+        this means geometrically. (Section 2.1)</p>
+      </li>
+      <li><p>
+        I can represent a linear system in three different ways and be
+        able to translate back and forth among the forms:  as Ax = b,
+        as a question about linear combinations, and as a question
+        about an augmented matrix (Section 2.2 - Prop 2.2.4) </p>
+      </li>
+      <li><p> I can reformulate and answer questions about span in
+      terms of linear combinations, matrix equations, and
+      geometrically. (Section 2.3)</p>
+      </li>
+      <li><p>
+        I can reformulate and answer questions about linearly
+        dependent or linearly independent vectors using appropriate
+        computations, and explain the meaning of the results of
+        computations in the language of linear combinations. (Section
+        2.4)</p>
+      </li>
+      <li><p>
+        I can find the matrix of a linear transformation using
+        elementary vectors, apply a transformation to a vector or
+        shape, and compose transformations using matrix
+        multiplication.  (Section 2.5)</p>
+      </li>
+      <li><p>
+        I can determine if a matrix is invertible, find an inverse,
+        and use inverses to solve matrix equations. (Section 3.1)</p>
+      </li>
+      <li><p>
+        I can determine whether or not a set of vectors is a basis for
+        , and I can convert a vector given in the standard basis into
+        a vector in another basis and vice versa. (Section 3.2)</p>
+      </li>
+      <li><p> I can find bases for the null space and the column space
+      of a matrix and explain why the set of vectors is a
+      basis. (Section 3.5) </p>
+      </li>
+      <li><p>
+        I can verify that a vector is an eigenvector algebraically and
+        explain what this means about the vector
+        geometrically. (Section 4.1)</p>
+      </li>
+      <li><p>
+        I can use the characteristic polynomial of a matrix A to
+        identify its eigenvalues, and then find a basis of
+        eigenvectors for each associated eigenspace and, if there is a
+        basis of eigenvectors for , use such a basis to describe the
+        matrix product Ax. (Section 4.2)</p>
+      </li>
+    </ol>
+  </p>
+</section>

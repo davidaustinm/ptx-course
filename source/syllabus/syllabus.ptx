@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Course outline</title>
+
+  <introduction>
+    <p>
+      Students sometimes come into a math class with expectations
+      based on their previous experiences and general attitudes in our
+      society.  Here are some important facts that inform the way our
+      class will be structured.
+
+      <ul>
+        <li><title>Math is social</title>
+        <p>
+          Math is social: Popular culture loves
+          stories about a solitary genius who works for years in
+          isolation.  In fact, most professional mathematicians work
+          closely with others and learn new ideas by talking with one
+          another.  This will be a feature of our class.  One of your best
+          resources will be your fellow classmates so I will help you get
+          to know one another and learn to talk about mathematics.  Not
+          only will this help you learn math, but you'll find it to be a
+          lot more fun.
+        </p>
+        </li>
+        
+        <li><title>We learn by doing</title>
+        <p>
+          I watched a lot of the NBA playoffs this year (Yay,
+          Thunder!), but I still can't make free throws.  The best way
+          to learn anything is to do it.  This means that the majority
+          of time in our class meetings will be devoted to students
+          working through activities with their classmates (math is
+          social, right?).  This gives me a chance to get to know all
+          of you as learners of math and to provide better feedback
+          based on your understanding.
+        </p>
+        </li>
+
+        <li><title>You belong in this class</title>
+        <p>
+          Sometimes students can feel anxious in their math class.
+          Have other students already had calculus?  Does everyone
+          remember everything from their high school math classes?
+          Does everyone already know everyone else except me?  These
+          are pretty natural concerns but please know that I will do
+          my best to get to know you and work with you with complete
+          acceptance of your prior experiences.
+        </p>
+        </li>
+
+        <li><title>Math makes sense</title>
+        <p>
+          Math makes sense: Based on your previous math courses, you
+          may think that the point of math is to get a "right" answer
+          as fast as you can using some algorithm that no one really
+          understands.  Nope.  Mathematics is a framework for making
+          sense of our world, and our goal in this class is to develop
+          your ability to think mathematically and to express your
+          ideas clearly.  A former student said, <q>Math is a lot easier
+          when you think about what it means.</q>
+        </p>
+        </li>
+
+        <li><title>I want you to succeed</title>
+        <p>
+          The most satisfying part of my job is seeing my students
+          grow as learners of mathematics and watching their
+          confidence grow.  I have high expectations of you in this
+          course, but I will also provide you with the support that
+          you need to reach those expectations.  I am always
+          interested in hearing about your experience, whether you are
+          feeling frustrated or whether you want to share some recent
+          success, and what kind of help you need from me.
+        </p>
+        </li>
+
+        <li><title>What I expect of you</title>
+        <p>
+          I've described some things above that I will provide you.
+          Because learning is a partnership, I also expect some things
+          from you because they will help you be successful.
+        </p>
+
+        <p>
+          Be open to new experiences and new people.  Share freely
+          with one another and accept the contributions of your
+          classmates with gratitude.
+        </p>
+
+        <p>
+          Be willing to accept that you may not understand everything
+          when you first see it but that I believe in your ability to
+          work with me and your classmates to arrive at a deep
+          understanding of mathematics.
+        </p>
+
+        <p>
+          Stay focused when working for this class.  You may not pay
+          monetarily to use social media, but you pay with your
+          attention, which is one of your most valuable resources.
+          Checking your phone regularly disrupts your concentration
+          and significantly detracts from your learning.  This is why
+          the people in Silicon Valley who create this technology
+          don't let their kids use it.  You may have a legitimate need
+          to check your notifications during class, but you should
+          otherwise be able to keep your phone in your pack for the 50
+          minutes that we meet.
+        </p>
+        </li>
+      </ul>
+    </p>
+  </introduction>
+
+  <subsection xml:id="sec-course-info">
+    <title>General Course Information</title>
+
+    <p>
+      <dl>
+        <li>
+          <title>Instructor</title>
+          <p>
+            Dr. David Austin
+          </p>
+        </li>
+
+        <li><title>Meetings</title>
+        <p>Section 04:  TR 11:30 - 12:45, MAK BLL-118</p>
+        <p>Section 05:  TR 2:30 - 3:45, MAK A-2-167</p>
+        </li>
+
+        <li><title>Email</title>
+        <p>
+          <url href="mailto:austind@gvsu.edu">austind@gvsu.edu</url>
+        </p>
+        </li>
+
+        <li><title>Office</title>
+          <p>C-2-409 Mackinac Hall (616-331-3431)</p>
+        </li>
+
+        <li>
+          <title>Textbook</title>
+
+          <p>
+            <url href="https://understandinglinearalgebra.org">
+              <em>Understanding Linear Algebra,</em>
+            </url>
+            freely available
+          </p>
+        </li>
+
+        <li><title>Office Hours</title>
+        <p>M 2:00 - 3:00 (MAK A-2-610)</p>
+        <p>T 10:00 - 11:00 (MAK A-2-610)</p>
+        <p>R 10:00 - 11:00 (MAK A-2-610)</p>
+        <p>Or by appointment</p>
+        </li>
+        
+        <li>
+          <title>Course web page</title>
+          
+          <p>
+            <url href="https://lms.gvsu.edu">Blackboard</url>
+          </p>
+        </li>
+        
+        <li>
+          <title>Key dates</title>
+          
+          <p>
+            <url
+                href="https://www.gvsu.edu/registrar/academiccalendar.htm">
+              University calendar
+            </url>
+          </p>
+        </li>
+      </dl>
+    </p>
+
+  <!-- Use paragraphs to break apart subsections -->
+    <paragraphs>
+      <title>What to call me</title>
+      <p> You may address me as
+      “Dr. Austin” or “Professor Austin”, and I prefer the pronouns
+      “he” and “him”.  Please be respectful of your instructors and
+      learn how they wish to be addressed.  “Professor” is more
+      appropriate than, say, “Mr.” or “Mrs.” but just ask if you ever
+      feel uncertain.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Office Hours</title>
+      <p> Office hours are times that I am guaranteed to be available
+      to you, and you are encouraged to stop by.  Sometimes students
+      want to talk about something in the course that is challenging
+      or intriguing to them.  But other times, students want to talk
+      about a wide variety of other things: resources they can take
+      advantage of, career opportunities, some current event, or what
+      made me want to be a math professor at Grand Valley.  This is
+      time for you, and I’m happy to talk with you about whatever is
+      on your mind.
+      </p>
+      <p>
+        It’s hard for me to find a time to hold office hours when all
+        my students are available.  I’m flexible and can arrange to
+        meet with you at another time, if that works better for you.
+        We could also meet by Zoom, if you’re not on campus.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>AI Policy</title>
+      <p>This one-word policy is simple: don’t.  Please don’t use
+      generative AI to complete any assignments or to check your work
+      in this course.  As full disclosure, I will tell you that I use
+      AI as part of a research project to develop a large-language
+      model that will translate math research papers into braille for
+      blind readers.  This task is very different from actually
+      learning mathematics, which is your job in this class.  You may
+      think:
+      <ul>
+        <li>
+          <p>
+            “I will be using AI in my career.”  With the current state
+            of AI, you won’t be using it to learn new ways of
+            thinking, like we’re trying to do in our course.  For one,
+            it’s not particularly good at doing mathematics, and it
+            won’t help you develop an understanding of mathematics.
+          </p>
+        </li>
+        <li>
+          <p>“I only use it to check my work when I don’t feel totally
+          confident.”  I am part of a math education research study
+          that investigates how students learn math from textbooks.
+          Interviews with students clearly show how using AI causes
+          students to become less confident over time since they come
+          to trust what comes from AI more than they trust their own
+          work.  Learning will be challenging and facing challenges
+          requires you to have the confidence that you can do it.
+          Please don’t surrender the trust that you have in your own
+          abilities.
+          </p>
+        </li>
+      </ul>
+      </p>
+
+      <p>
+        One research study, among others, is described here:
+        <url href="https://www.nytimes.com/2025/07/03/opinion/aritificial-intelligence-education.html?unlocked_article_code=1.d08.sztp.9zECXshpy_dr=url-share">
+          <em>Are We Really Willing to Become Dumber?</em>
+        </url>
+      </p>
+
+      <p>
+        Or as ChatGPT said when asked to translate this policy into
+        pirate: “The seas of AI be treacherous and will dull yer
+        skills. Ye’ll learn by yer own hand, not by a talking parrot
+        spitting answers.”
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Phone policy</title>
+      <p>
+        During our class meetings, please keep your phone stored with
+        your belongings and away from your work space, unless you have
+        an exceptional situation such as concern for a friend or
+        family member.  We live in an age where your attention is
+        being monetized by others, and it is not readily apparent the
+        price that you are paying.  An overwhelming amount of
+        research, however, plainly shows how disruptive this
+        technology is to your learning.
+        <url href="https://www.nytimes.com/2018/10/26/style/phones-children-silicon-valley.html?unlocked_article_code=1.dk8.6ygB.2TOc7QaMEx3N=url-share">
+          “On the scale between candy
+          and crack cocaine, it’s closer to crack cocaine,” Mr. Anderson
+          [former editor of Wired magazine] said of screens.
+        </url>
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Technology</title>
+      <p>If you have a laptop/tablet/Chromebook, please bring it to
+      class.  We will use free, online computational tools such as
+      Sage and Desmos.  These tools are superior to a traditional
+      calculator so you don’t need to buy a calculator for this
+      course.  If you already have a calculator, you are welcome to
+      use it.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Communication</title>
+      <p>I will be posting assignments, activities, and other relevant
+      information on our course Blackboard page. I will also be
+      communicating with you frequently through email. Please make
+      sure that you check your Grand Valley email on a daily basis.
+      Please don’t send messages to me through Blackboard’s messaging
+      system because I am unlikely to see them in a timely fashion.
+      </p>
+    </paragraphs>
+
+    
+  </subsection>
+
+  <!-- Other subsections for larger dividers -->
+  <subsection xml:id="sec-assessments">
+    <title>About MTH 204</title>
+
+    <p>
+      <alert>MTH 204</alert> is our first semester course in linear
+      algebra.  You may find that linear algebra is a little different
+      than some of the other math courses you have taken up to this
+      point, and I think you’re going to enjoy it a lot.  Roughly
+      speaking, we have three overarching goals.  First, we’d like you
+      to learn how to reason about important mathematical concepts and
+      to express your reasoning clearly and precisely.  Second, linear
+      algebra is shaping our society in profound ways, and we’d like
+      you to understand this and to see the powerful ways in which
+      mathematics is applied in the world around us.  Finally, the
+      mathematician Carl Cowen said that “no significant use of linear
+      algebra happens without a computer” so we’ll be developing our
+      ability to deploy linear algebraic thinking to solve realistic
+      problems using a computer.
+    </p>
+
+    <paragraphs>
+      <title>
+        Catalog Description​ of MTH 204, Linear Algebra I
+      </title>
+      <p>
+        <em>
+        An introduction to systems of linear equations emphasizing
+        conceptual understanding and computational thinking. Primary
+        topics include solutions to linear systems, vector and matrix
+        algebra, span and linear independence, bases, eigenvectors,
+        and eigenvalues. Applications will be integrated throughout
+        the course. Offered fall and winter semesters. Prerequisites:
+        MTH 122 and MTH 123; or MTH 124; or assignment through Grand
+        Valley math placement.”
+        </em>
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Course Content</title>
+      <p>We will study all or nearly all of the material in the first
+      four chapters of our textbook, <em>Understanding Linear Algebra.</em>
+      Your goal should be, as part of our ongoing work together, to
+      read the text itself and ask questions as needed.  Preview
+      Activities will normally be assigned for credit (based on effort
+      and completeness) as part of your Daily Prep Assignments; the
+      other activities in the text will be a central focus of our
+      in-class discussions and work, and it’s your responsibility
+      (with lots of support from your instructor and one another) to
+      make sure you understand them and work through them fully.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Prerequisites</title>
+      <p>​ MTH 122/123 or MTH 124 or GV placement.  As you’ll see, this
+      course doesn’t rely on prerequisites as much as your calculus
+      class would, but there are some times when you’ll need to have a
+      working knowledge of important concepts from algebra and
+      trigonometry.  I'm willing to help you if you feel rusty with a
+      few of these ideas, but you are responsible for making sure you
+      have a good understanding of the prerequisite knowledge
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Learning Objectives</title>
+
+      <p>After successful completion of this course, you will
+      be able to:
+        <ul>
+          <li><p>Analyze systems of linear equations and describe
+          their solution spaces.
+          </p></li>
+          <li><p>Describe how the pivot positions of an augmented
+          matrix influence the nature of the solution space to a
+          linear system.</p></li>
+          <li><p>Demonstrate algebraic and geometric fluency with
+          vectors.</p></li>
+          <li><p>Interpret questions about linear systems as questions
+          about linear combinations of vectors.</p></li>
+          <li><p>Describe the concept of span of a set of vectors and
+          apply it to determine the span of a set of vectors.</p></li>
+          <li><p>Describe the concept of linear independence of a set
+          of vectors and apply it to determine whether a set of
+          vectors is linearly independent.</p></li>
+          <li><p>Interpret matrix transformations as functions defined
+          through matrix multiplication and create specific matrix
+          transformations to perform geometric operations.</p></li>
+          <li><p>Calculate matrix sums, products, and multiples by
+          scalar, and recognize matrix products as arising from
+          composing matrix transformations.</p></li>
+          <li><p>Recognize a basis for R n and use the coordinate
+          system it defines to solve problems.</p></li>
+          <li><p>Recognize an invertible matrix and find its
+          inverse.</p></li>
+          <li><p>Apply one of several algorithms for finding the
+          determinant of a matrix, and use the determinant to
+          determine if a matrix is invertible. </p></li>
+          <li><p>State the definition and intuitive meaning of an
+          eigenvalue-eigenvector pair of a square matrix.</p></li>
+          <li><p>Apply a conceptual understanding of linear systems to
+          find the eigenvalues and eigenvectors of a square
+          matrix.</p></li>
+          <li><p>Demonstrate how the theory of eigenvalues and
+          eigenvectors is used to solve problems in dynamical
+          systems.</p></li>
+          <li><p>Use computer algebra technology as a tool to solve
+          important problems in linear algebra.</p></li>
+        </ul>
+      </p>
+    </paragraphs>
+  </subsection>
+
+  <subsection>
+    <title>Assessment and how grades will be determined</title>
+
+    <p>There will be several ways in which you will be assessed in
+    this course and which will contribute to your final grade.
+
+    <dl>
+      <li><title>Daily prep 10%</title>
+      <p>
+        Before most class meetings, you will
+        be asked to do some work to help prepare for our time together
+        in class.  This will often involve working a few short
+        problems and providing me with feedback on your preparation.
+        These will be graded according to the effort you have put into
+        them rather than correctness.
+      </p>
+      </li>
+      <li><title>WebWork 15%</title>
+      <p>
+        WeBWork is a free online homework system that you will use
+        regularly to complete assignments that provide an opportunity
+        for you to practice important skills required for success in
+        this course.  Webwork provides immediate feedback on your work
+        as well as the chance to attempt problems multiple times.
+      </p>
+      </li>
+      <li><title>Learning targets 20%</title>
+      <p>
+        We will have weekly proficiency
+        quizzes addressing a set of
+        <xref ref="targets" text="custom">
+        Proficiency Learning Targets
+        </xref> that
+        measure your understanding of certain essential skills you
+        need to build a deep understanding of linear algebra.  Since
+        this is an important part of the course, more details are
+        provided later in this document.
+      </p>
+      </li>
+      <li><title>Written homework 20%</title>
+      <p>
+        You will have written homework assignments roughly every week.
+        The assigned problems will ask you to use the skills assessed
+        in the Proficiency Learning Targets as you solve multi-part,
+        large-scale problems.  You will be expected to write carefully
+        about your work, including justifications of any techniques
+        you have used and a summary of your results and conclusions.
+        Each problem will be graded on a four-point scale: Exemplary
+        (“E”) is 4 points, Satisfactory (“S”) is 3, and Not Yet (“NY”)
+        is 0.
+      </p>
+      </li>
+
+      <li><title>Labs 15%</title>
+      <p>About every other week, you’ll start a
+        lab or activity in class that you’ll complete and write up
+        outside of class for a formal grade; normally these will be
+        done in groups of two and assigned a single group grade.
+      </p>
+      </li>
+
+      <li><title>Final exam 20%</title>
+      <p>
+        The comprehensive final exam will consist of
+        questions that address big-picture ideas in the course, and
+        your work on those problems will constitute 20% of your
+        semester grade.  More information about the final will be
+        available later in the semester.
+      </p>
+      </li>
+    </dl>
+    </p>
+
+    <p>Your final grade will be determined on the following scale,
+    which is fairly typical at Grand Valley:</p>
+
+    <tabular>
+      <row>
+        <cell>A</cell>
+        <cell>&gt; 93%</cell>
+      </row>
+      <row>
+        <cell>A-</cell>
+        <cell>&gt; 90%</cell>
+      </row>
+      <row>
+        <cell>B+</cell>
+        <cell>&gt; 87%</cell>
+      </row>
+      <row>
+        <cell>B</cell>
+        <cell>&gt; 83%</cell>
+      </row>
+      <row>
+        <cell>B-</cell>
+        <cell>&gt; 80%</cell>
+      </row>
+      <row>
+        <cell>C+</cell>
+        <cell>&gt; 77%</cell>
+      </row>
+      <row>
+        <cell>C</cell>
+        <cell>&gt; 73%</cell>
+      </row>
+      <row>
+        <cell>C-</cell>
+        <cell>&gt; 70%</cell>
+      </row>
+      <row>
+        <cell>D+</cell>
+        <cell>&gt; 67%</cell>
+      </row>
+      <row>
+        <cell>D</cell>
+        <cell>&gt; 63%</cell>
+      </row>
+      <row>
+        <cell>F</cell>
+        <cell>&lt; 63%</cell>
+      </row>
+    </tabular>
+
+  </subsection>
+
+  <subsection>
+    <title>Proficiency quizzes</title>
+
+    <p>This course has a set of
+    <xref ref="targets" text="custom">
+    learning targets
+    </xref> that are intended to
+    focus your attention on specific skills you should acquire to
+    develop a deep understanding of linear algebra.  Here are some
+    things to know about why this is an important part of the course.
+
+    <ul>
+      <li>
+        <p>
+          Learning is a process. You will not be penalized if you don't
+          demonstrate proficiency in a skill the first time, but you are
+          expected to do so eventually.
+        </p>
+      </li>
+      <li>
+        <p>
+          Frequent  assessment is good for learning.  Think of these
+          quizzes as a tool for learning rather than   just
+          assessment---studies show that retrieval of information
+          makes it easier to recall that information later. This is
+          called “the testing effect.''
+        </p>
+      </li>
+      <li>
+        <p>
+          Keeping up with course material is important.  These quizzes
+          will be one way of informing both you and me about your
+          progress in the course.
+        </p>
+      </li>
+      <li>
+        <p>
+          Knowing the basics well is crucial for tackling more
+          in-depth problems. These targets were chosen because they
+          are fundamental so you should think of them as building
+          blocks.  You will have time to practice these skills before,
+          during, and after class, but we will also spend class time
+          using them to tackle substantial problems.
+        </p>
+      </li>
+    </ul>
+  </p>
+
+  <p>
+    Here are the nuts and bolts of how it works.
+
+    <ul>
+      <li>
+        <p>
+          Each Thursday, we will have an in-class quiz that assesses some of
+          these skills, which will be announced in advance.
+        </p>
+      </li>
+      <li>
+        <p>
+          Each skill will be graded on a four-point scale: “E'' for
+          “Exemplary'' is four points, “S” for “Satisfactory is three
+          points, and “NY'' for “not yet'' is zero points To earn an
+          “E,'' your solution needs to show all work and explanations,
+          use correct notation, and arrive at a correct answer. In
+          short, your work should be close to perfect.
+        </p>
+      </li>
+      <li>
+        <p>
+          If you did not successfully complete a learning target, you
+          can try again next week.  I won't provide a lot of feedback
+          because it's very helpful for you to learn to assess your
+          work independently of me.  I am happy to talk with you about
+          any of your work on the quizzes though.
+        </p>
+      </li>
+      <li>
+        <p>Since you have multiple attempts on each target, there will
+        be no makeup quizzes.</p>
+      </li>
+      <li><p>Each target will appear on two quizzes.</p></li>
+      <li><p>If you still haven't successfully completed a target
+      after your second attempt, you are welcome to talk with me about
+      it during office hours (or another agreed upon time) within one
+      week of the second attempt, and you can have another
+      attempt.</p></li>
+    </ul>
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Submitting work</title>
+
+    <paragraphs>
+      <title>Submitting graded work</title>
+
+      <p>
+        Make sure that your written homework is prepared neatly and
+        well organized so that it's easy to follow.  There should be
+        at least two phases to preparing your homework assignments:
+        (1) solving the assigned problems and (2) writing up your
+        solutions and editing.  Be sure to keep them separate.  If you
+        are crossing out portions of your work or including arrows
+        pointing to your next steps, you are combining the two phases
+        and need to start the writing phase again once you've got a
+        better understanding of the problem.  Please include the
+        problems in the order in which they are assigned.  Make sure
+        your name is clearly indicated.
+      </p>
+
+      <p>
+        Through our work in class and other things like written
+        homework, we will be building from the ground up an
+        understanding of linear algebra.  In preparing your homework,
+        you should only use results that we have developed in our
+        class rather than something that shows up in an internet
+        search that may be technically correct but not consistent with
+        the framework that we have developed.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Late work</title>
+      <p>
+        While assignments will always have due dates, I recognize that
+        life happens and that you don’t owe me an explanation when it
+        does.  Throughout the semester, you are allowed to submit an
+        assignment late on three occasions provided you write to me
+        beforehand and let me know when you’ll get it to me.  Please
+        note that this policy does not apply to learning target
+        quizzes.  If you are habitually having a hard time handing
+        things in on time, please come and talk with me.
+      </p>
+    </paragraphs>
+  </subsection>
+
+  <subsection>
+    <title>Expectations</title>
+
+    <p>
+      <ul>
+        <li>
+          <p>Four basic expectations will serve you well in the course:
+          <ol>
+            <li><p>take responsibility for your own learning</p></li>
+            <li><p>attend to details and follow directions</p></li>
+            <li><p>seek help when you need support</p></li>
+            <li><p>keep a careful written record of all your work</p></li>
+          </ol>
+          </p>
+        </li>
+        <li>
+          <p>I encourage you to focus your work in MTH 204 on <em>making
+          sense and understanding,</em> not on answers or memorization or
+          blindly repeating algorithms.  It is more important than
+          ever to be able to solve non-routine problems and be
+          confident in attacking new ideas.  If you work to make sense
+          of ideas, you will be able to think creatively in new ways.
+          If you can communicate these ideas to others, you will be
+          able to really demonstrate that understanding. These skills
+          are far more valuable to your future than any particular
+          content you can learn in MTH 204.  As a former student said:
+          “linear algebra just makes sense!” (Alexis - the student who
+          said that - now holds a PhD in mathematics and works in data
+          science and machine learning.)</p>
+        </li>
+        <li>
+          <p><em>Work hard.</em>  This is a 3-credit course, which carries an
+          expectation of 6-9 hours of work each week outside of class.
+          You will find that things come more easily if you work a
+          little bit every day rather than planning a long study
+          session before a due date.</p>
+        </li>
+        <li>
+          <p><em>Attend each class meeting.</em> Attendance is
+          expected and critical to your success, and you will be
+          missed if you are absent.  Please be on time to class.
+          Showing up is a key to success in all aspects of life.  At
+          the same time, I realize that it may be necessary for you to
+          miss some class meetings due to work, family commitments,
+          and so forth.  In that case, let me know of your absence,
+          and we can come up with a plan to help you stay
+          up-to-date.</p>
+        </li>
+        <li>
+          <p><em>Stay off of social media during class and while
+          studying.</em>
+          Arguably the most valuable commodity we each possess is our
+          attention.  Instagram, SnapChat, TikTok and other apps know
+          this, and they were designed (designed by engineers and
+          psychologists) to be addictive and persuasive.  If you have
+          any of these apps open during class or when you are
+          committed to studying, you are guaranteed to be distracted.
+          I strongly encourage you to dedicate time free from social
+          media distractions so that you can think as clearly as
+          possible about the ideas in our course.</p>
+        </li>
+        <li>
+          <p><em>Seek help.</em> You have three main resources for
+          support with mathematical ideas: (1) office hours or an
+          individual appointment with me, (2) your peers in class, and
+          (3) the GVSU Math Center.  Be honest with yourself and ask,
+          “Do I really understand this?”  If not, find someone who
+          does and discuss the ideas with them.</p>
+
+          <p>GVSU’s (free) Math Tutoring Center is offering both
+          in-person and virtual tutoring this semester.  More
+          information is available here
+          http://gvsu.edu/tutoring/math/.  This is a great resource,
+          and I encourage you to take advantage of it.</p>
+
+          <p>GVSU’s (free) Math Tutoring Center is offering both
+          in-person and virtual tutoring this semester.  More
+          information is available here
+          http://gvsu.edu/tutoring/math/.  This is a great resource,
+          and I encourage you to take advantage of it.</p>
+
+          <p> You may also need help with other aspects of life that
+          go beyond mathematics.  If you have special needs because of
+          learning, physical, or other disabilities, please contact
+          Student Accessibility Resources.  They will help arrange
+          accommodations; please inform me of any ways I can be
+          supportive.  If you have difficulty affording groceries or
+          accessing sufficient food to eat every day, or if you lack a
+          safe and stable place to live, I encourage you to visit
+          Replenish, a food and living resource for GVSU students. If
+          you are comfortable doing so, you are welcome to speak with
+          me about your circumstances so that I can advocate for you
+          and to connect you with other campus resources.
+          </p>
+        </li>
+
+        <li><p><em>Be a student of honesty and integrity.</em>  The
+        whole point 
+        of any course is to learn a lot.  Strive to make your entire
+        mindset focused on building understanding and making sense of
+        key ideas, and great things will follow.  The structure of
+        this course is designed to provide you with alternatives to
+        cheating or plagiarism.  With most aspects of this course, you
+        can submit your best effort and know that you’ll have
+        additional opportunities to correct any misunderstandings and
+        grow as a learner.</p></li>
+
+        <li>
+          <p><em>Key dates</em>
+
+          <dl>
+            <li><title>January 16</title>
+	    <p>Last Day to Add or Drop (5pm) </p></li>
+            <li><title>February 6</title>
+	    <p>75% Tuition Refund deadline</p></li>
+            <li><title>March 3</title>
+	    <p>Mid-term Grades due (noon)</p></li>
+            <li><title>March 8 - 14</title>
+	    <p>Spring Break (no classes)</p></li>
+            <li><title>March 27</title>
+	    <p>Withdrawal Deadline (5pm)</p></li>
+            <li><title>April 25</title>
+	    <p>Classes End</p></li>
+            <li><title>April 25 - May 2</title>
+	    <p>Final Exams (see Registrar page for schedule)</p></li>
+            <li><title>May 2</title>
+	    <p>Last day of semester</p></li>
+          </dl>
+          </p>
+
+          <p>
+            More at the
+            <url
+                href="https://www.gvsu.edu/registrar/academiccalendar.htm">
+              University academic calendar.
+            </url>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            This course is subject to these
+            <url href="http://www.gvsu.edu/coursepolicies/">
+              GVSU policies.
+            </url>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            In the (hopefully unlikely) event that the university
+            moves all classes online, or if I am ill or unable to come
+            to campus, I will contact you through a Blackboard
+            announcement and let you know of a plan.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            I reserve the right to make changes to this syllabus.  Any
+            changes made after the syllabus is first distributed
+            before the start of the semester will be announced in
+            class and on Blackboard.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+
+  <subsection>
+    <title> More general information and resources</title>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            As adopted by the Board of Trustees, in
+            <url
+                href="https://www.gvsu.edu/policies/policy.htm?policyId=48229934-C4E7-FBFF-DD302C5E5B4EE45C">
+              University Policies 9.1,
+            </url>
+            Grand Valley State University is committed
+            to inclusion and equity, and strives to establish a
+            climate that welcomes and affirms the contributions of all
+            students and employees. The University is guided by values
+            for inclusiveness and community which are integral to our
+            mission to educate students to shape their lives, their
+            professions, and their societies, and to enrich the
+            community through excellent teaching, active scholarship,
+            and public service. The University strives to provide all
+            members of its community an inclusive environment and
+            equitable opportunities for success.
+          </p>
+          <p>
+            The University is also committed to maintaining a climate
+            conducive to an educational, living, and employment
+            environment that is free from unlawful acts of harassment
+            and discrimination, as well as those defined by this
+            policy. All members of the community are expected to
+            conduct themselves in a manner that does not infringe upon
+            the rights of others. It is neither the purpose nor intent
+            of this policy to infringe on the First Amendment or
+            academic freedom as defined by the University.
+          </p>
+          <p>
+            The University is an Antidiscrimination/Equal Employment
+            Opportunity institution, consistent with its obligations
+            as a federal contractor. It encourages diversity and
+            provides equal opportunity in education, employment, all
+            of its programs, and the use of its facilities. It is
+            committed to protecting the constitutional and statutory
+            civil rights of persons connected with the University.
+          </p>
+          <p>
+            Members of the University community, including students,
+            employees, faculty, staff, administrators, Board members,
+            consultants, vendors, others engaged to do business with
+            the University, candidates for employment or admissions,
+            and visitors or guests have the right to be free from acts
+            of harassment and discrimination, including sexual
+            misconduct, as defined by this policy. In accordance with
+            applicable federal and state law and this policy, acts of
+            discrimination or harassment by members of the campus
+            community are prohibited if they discriminate or harass on
+            the basis of age, color, disability, familial status,
+            height, marital status, national origin, political
+            affiliation, race, religion, sex/gender (including gender
+            identity and expression), sexual orientation, veteran or
+            active duty military status or weight. This includes
+            inappropriate limitation of, access to, or participation
+            in educational, employment, athletic, social, cultural, or
+            other university programs and activities. The University
+            will provide reasonable accommodations to qualified
+            individuals with disabilities. Limitations are lawful if
+            they are: directly related to a legitimate university
+            purpose, required by law, or lawfully required by a grant
+            or contract between the university and the state or
+            federal government. For the purposes of this policy,
+            sex-/gender-based harassment includes sexual misconduct,
+            sexual assault, interpersonal or relationship violence,
+            and stalking.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Student Well-Being</em>: As a student, you may experience a
+            range of issues that can negatively impact your learning,
+            such as anxiety, depression, interpersonal or sexual
+            violence, difficulty eating or sleeping, loss/grief,
+            and/or alcohol/drug problems. These mental health concerns
+            or stressful events may lead to diminished academic
+            performance and affect your ability to participate in
+            day-to-day activities. In order to support you during such
+            challenging times, GVSU provides a number of confidential
+            resources to all enrolled students, including the
+            <url href="http://www.gvsu.edu/counsel/">
+              University Counseling Center
+            </url>
+            or (616) 331-3266) and the Student Ombuds,
+            <url href="mailto:garrettt@gvsu.edu">
+              Takeelia Garrett.
+            </url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Academic Integrity</title>
+
+    <p>
+      Throughout this course, I hope that you learn and share ideas
+      with your classmates.  Please be aware of the following
+      university policies regarding academic honesty.
+    </p>
+
+    <paragraphs>
+      <title>Integrity of Scholarship and Grades</title>
+
+      <p>
+        Truth and honesty: The principles of truth and honesty are
+        recognized as fundamental to a community of teachers and
+        scholars. The university expects that both faculty members and
+        students will honor these principles and in so doing protect
+        the validity of university grades. This means that all
+        academic work will be done by the student to whom it is
+        assigned without unauthorized aid of any kind. Instructors,
+        for their part, will exercise care in the planning and
+        supervision of academic work, so that honest effort will be
+        positively encouraged. Compliance shall include compliance
+        with the following specific rules:
+
+        <ol>
+          <li>
+            <p>
+              No student shall knowingly, without authorization,
+              procure, provide, or accept any materials which contain
+              questions or answers to any examination or assignment.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No student shall, without authorization, complete, in
+              part or in total, any examination or assignment for
+              another person.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No student shall, without authorization, allow any
+              examination or assignment to be completed, in part or in
+              total, by another person.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No student shall knowingly plagiarize or copy the work of another
+              person and submit it as his or her own.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No student shall submit work that has been previously
+              graded or is being submitted concurrently to more than
+              one course without authorization from the instructor(s)
+              of the class(es) to which the student wishes to submit
+              it.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Plagiarism</title>
+      <p>
+        Any ideas or material taken from another source for either
+        written or oral presentation must be fully
+        acknowledged. Offering the work of someone else as one’s own
+        is plagiarism. The language or ideas taken from another may
+        range from isolated formulas, sentences, or paragraphs to
+        entire articles copied from books, periodicals, speeches, or
+        the writing of other students. The offering of materials
+        assembled or collected by others in the form of projects or
+        collections without acknowledgment also is considered
+        plagiarism. Any student who fails to give credit in written or
+        oral work for the ideas or materials that have been taken from
+        another is guilty of plagiarism.
+      </p>
+    </paragraphs>
+  </subsection>
+  
+</section>

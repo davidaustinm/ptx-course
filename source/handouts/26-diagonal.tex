@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Generalized eigenspaces</title>
+
+  <introduction>
+    <p>
+      In this worksheet, we explore generalized eigenspaces and how they
+      decompose a vector space. Let <m>T:V \to V</m> be a linear operator
+      with minimal polynomial <m>p(x)=(x-\lambda)^k q(x)</m>, where
+      <m>q(\lambda)\neq 0</m>. Then <m>\lambda</m> is an eigenvalue and
+    </p>
+    <p>
+      <me>G_\lambda = \nul((T-\lambda I)^k)</me>
+    </p>
+    <p>
+      is called the generalized eigenspace. Elements of <m>G_\lambda</m>
+      are called generalized eigenvectors.
+    </p>
+  </introduction>
+
+  <exercise>
+    <task workspace="1in">
+      Suppose that <m>\vvec</m> is a generalized eigenvector with
+      eigenvalue <m>\lambda</m>. Explain why
+      <m>(T-\lambda I)^k\vvec = 0</m>.
+    </task>
+
+    <task workspace="1in">
+      What can you conclude about the annihilating polynomial
+      <m>p_\vvec</m>?
+    </task>
+
+    <task workspace="1in">
+      Suppose that <m>\lambda</m> and <m>\mu</m> are two distinct eigenvalues.
+      Use these observations to explain why
+      <m>G_\lambda \cap G_\mu = \{0\}</m>.
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      Suppose that <m>\dim V = 4</m> and <m>V_1</m> and <m>V_2</m> are subspaces
+      of <m>V</m> with <m>\dim V_1 = 3</m> and <m>\dim V_2 = 2</m>. Then there
+      are bases <m>\{\vvec_1,\vvec_2,\vvec_3\}</m> for <m>V_1</m> and
+      <m>\{\vvec_4,\vvec_5\}</m> for <m>V_2</m>. Explain why the set
+    </task>
+
+    <task workspace="1in">
+      <p>
+        <me>\{\vvec_1,\vvec_2,\vvec_3,\vvec_4,\vvec_5\}</me>
+      </p>
+    </task>
+
+    <task workspace="1in">
+      is linearly dependent.
+    </task>
+
+    <task workspace="1in">
+      Use this fact to show that
+      <m>V_1 \cap V_2 \neq \{0\}</m>.
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      Suppose that <m>p(x)=(x-2)^3(x-4)^2</m>. If <m>\wvec</m> is in
+      <m>\range((T-4I)^2)</m>, explain why
+      <m>(T-2I)^3(\wvec) = 0</m>.
+    </task>
+
+    <task workspace="1in">
+      Explain why
+      <m>\range((T-4I)^2) \subset \nul((T-2I)^3) = G_2</m> and hence
+      <m>\dim \range((T-4I)^2) \leq \dim G_2</m>.
+    </task>
+
+    <task workspace="1in">
+      Explain why
+      <p>
+        <me>\dim G_4 + \dim \range((T-4I)^2) = \dim V.</me>
+      </p>
+    </task>
+
+    <task workspace="1in">
+      Explain why
+      <p>
+        <me>\dim G_4 + \dim G_2 \geq \dim V.</me>
+      </p>
+    </task>
+
+    <task workspace="1in">
+      Since <m>G_4 \cap G_2 = \{0\}</m>, explain why
+      <m>\dim G_4 + \dim G_2 = \dim V</m>.
+    </task>
+
+    <task workspace="1in">
+      Explain why <m>G_4 \oplus G_2 = V</m>.
+    </task>
+
+    <task workspace="1in">
+      Explain why both <m>G_4</m> and <m>G_2</m> are <m>T</m>-invariant.
+    </task>
+
+    <task workspace="1in">
+      If <m>\bcal</m> is a basis for <m>G_4</m> and <m>\ccal</m> is a basis for
+      <m>G_2</m>, then <m>\dcal=\bcal\cup\ccal</m> is a basis for <m>V</m>.
+      Explain why
+    </task>
+
+    <task workspace="1in">
+      <p>
+        <me>
+        \coords{T}{\dcal,\dcal} =
+        \begin{bmatrix}
+        \coords{T}{\bcal,\bcal} &amp; \zerovec \\
+        \zerovec &amp; \coords{T}{\ccal,\ccal}
+        \end{bmatrix}.
+        </me>
+      </p>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      Suppose the minimal polynomial factors as
+    </task>
+
+    <task workspace="1in">
+      <p>
+        <me>
+        p(x) =
+        (x-\lambda_1)^{k_1}(x-\lambda_2)^{k_2}\ldots(x-\lambda_m)^{k_m}.
+        </me>
+      </p>
+    </task>
+
+    <task workspace="1in">
+      Explain why
+    </task>
+
+    <task workspace="1in">
+      <p>
+        <me>
+        V = G_{\lambda_1} \oplus G_{\lambda_2} \oplus \ldots \oplus
+        G_{\lambda_m}.
+        </me>
+      </p>
+    </task>
+
+    <task workspace="1in">
+      Explain why there is a basis for <m>V</m> such that the matrix
+      representing <m>T</m> is block diagonal with blocks corresponding
+      to <m>T|_{G_{\lambda_j}}</m>.
+    </task>
+  </exercise>
+
+  <conclusion>
+    <p>
+      In this worksheet, you have shown that generalized eigenspaces corresponding
+      to distinct eigenvalues intersect trivially and together span the vector
+      space. This leads to a decomposition of <m>V</m> into invariant subspaces,
+      providing a structural understanding of linear operators via their minimal
+      polynomials.
+    </p>
+  </conclusion>
+
