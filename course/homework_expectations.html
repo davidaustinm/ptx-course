@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Written homework expectations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MTH 204:  Linear Algebra I">
+<meta property="book:author" content="David Austin">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.f6b4a33441cf25ab.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.720279673ae692d7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MTH 204:  Linear Algebra I</span> <span class="subtitle">Winter 2026</span></a></h1>
+<p class="byline">David Austin</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="targets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-documents.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="course-notes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\avec}{{\mathbf a}}
+\newcommand{\bvec}{{\mathbf b}}
+\newcommand{\cvec}{{\mathbf c}}
+\newcommand{\dvec}{{\mathbf d}}
+\newcommand{\dtil}{\widetilde{\mathbf d}}
+\newcommand{\evec}{{\mathbf e}}
+\newcommand{\fvec}{{\mathbf f}}
+\newcommand{\nvec}{{\mathbf n}}
+\newcommand{\pvec}{{\mathbf p}}
+\newcommand{\qvec}{{\mathbf q}}
+\newcommand{\svec}{{\mathbf s}}
+\newcommand{\tvec}{{\mathbf t}}
+\newcommand{\uvec}{{\mathbf u}}
+\newcommand{\vvec}{{\mathbf v}}
+\newcommand{\wvec}{{\mathbf w}}
+\newcommand{\xvec}{{\mathbf x}}
+\newcommand{\yvec}{{\mathbf y}}
+\newcommand{\zvec}{{\mathbf z}}
+\newcommand{\rvec}{{\mathbf r}}
+\newcommand{\mvec}{{\mathbf m}}
+\newcommand{\zerovec}{{\mathbf 0}}
+\newcommand{\onevec}{{\mathbf 1}}
+\newcommand{\real}{{\mathbb R}}
+\newcommand{\complex}{{\mathbb C}}
+\newcommand{\integer}{{\mathbb Z}}
+\newcommand{\poly}{{\mathbb P}}
+\newcommand{\field}{{\mathbb F}}
+\newcommand{\twovec}[2]{\left[\begin{array}{r}#1 \\ #2
+\end{array}\right]}
+\newcommand{\ctwovec}[2]{\left[\begin{array}{c}#1 \\ #2
+\end{array}\right]}
+\newcommand{\threevec}[3]{\left[\begin{array}{r}#1 \\ #2 \\ #3
+\end{array}\right]}
+\newcommand{\cthreevec}[3]{\left[\begin{array}{c}#1 \\ #2 \\ #3
+\end{array}\right]}
+\newcommand{\fourvec}[4]{\left[\begin{array}{r}#1 \\ #2 \\ #3 \\ #4
+\end{array}\right]}
+\newcommand{\cfourvec}[4]{\left[\begin{array}{c}#1 \\ #2 \\ #3 \\ #4
+\end{array}\right]}
+\newcommand{\fivevec}[5]{\left[\begin{array}{r}#1 \\ #2 \\ #3 \\
+#4 \\ #5 \\ \end{array}\right]}
+\newcommand{\cfivevec}[5]{\left[\begin{array}{c}#1 \\ #2 \\ #3 \\
+#4 \\ #5 \\ \end{array}\right]}
+\newcommand{\mattwo}[4]{\left[\begin{array}{rr}#1 \amp #2 \\ #3 \amp #4 \\ \end{array}\right]}
+\newcommand{\laspan}[1]{\text{Span}\{#1\}}
+\newcommand{\bcal}{{\cal B}}
+\newcommand{\ccal}{{\cal C}}
+\newcommand{\dcal}{{\cal D}}
+\newcommand{\scal}{{\cal S}}
+\newcommand{\wcal}{{\cal W}}
+\newcommand{\ecal}{{\cal E}}
+\newcommand{\fcal}{{\cal F}}
+\newcommand{\coords}[2]{\left\{#1\right\}_{#2}}
+\newcommand{\gray}[1]{\color{gray}{#1}}
+\newcommand{\lgray}[1]{\color{lightgray}{#1}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\row}{\text{Row}}
+\newcommand{\col}{\text{Col}}
+\renewcommand{\row}{\text{Row}}
+\newcommand{\nul}{\text{nul}}
+\newcommand{\range}{\text{range}}
+\newcommand{\var}{\text{Var}}
+\newcommand{\corr}{\text{corr}}
+\newcommand{\len}[1]{\left|#1\right|}
+\newcommand{\bbar}{\overline{\bvec}}
+\newcommand{\bhat}{\widehat{\bvec}}
+\newcommand{\bperp}{\bvec^\perp}
+\newcommand{\xhat}{\widehat{\xvec}}
+\newcommand{\vhat}{\widehat{\vvec}}
+\newcommand{\uhat}{\widehat{\uvec}}
+\newcommand{\what}{\widehat{\wvec}}
+\newcommand{\Sighat}{\widehat{\Sigma}}
+\newcommand{\basis}[2]{#1_1,#1_2,\ldots,#1_#2}
+\newcommand{\inner}[2]{\langle #1, #2\rangle}
+\newcommand{\conj}[1]{\overline{#1}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Course outline</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">General Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">About MTH 204</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-5" class="internal"><span class="title">Assessment and how grades will be determined</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-6" class="internal"><span class="title">Proficiency quizzes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-7" class="internal"><span class="title">Submitting work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8" class="internal"><span class="title">Expectations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9" class="internal"><span class="title">More general information and resources</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10" class="internal"><span class="title">Academic Integrity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="targets.html" class="internal"><span class="title">Learning targets</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="homework_expectations.html" class="internal"><span class="title">Written homework expectations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Monday 8/22</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Wednesday 8/24</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Monday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Wednesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-4" class="internal"><span class="title">Friday</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">MTH 406: Generalized eigenspaces</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="generalized-eigenspaces.html" class="internal"><span class="title">Generalized Eigenspaces</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="homework_expectations"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Written homework expectations</span>
+</h2>
+<section class="paragraphs" id="homework_expectations-2"><h3 class="heading"><span class="title">Grading and resubmissions.</span></h3>
+<div class="para logical" id="homework_expectations-2-2">
+<div class="para">Each exercise will be graded as</div>
+<dl class="description-list">
+<dt id="homework_expectations-2-2-1-1">E (exemplary)<div class="autopermalink" data-description="Item: E (exemplary)"><a href="#homework_expectations-2-2-1-1" title="Copy heading and permalink for Item: E (exemplary)" aria-label="Copy heading and permalink for Item: E (exemplary)">🔗</a></div>
+</dt>
+<dd><div class="para" id="homework_expectations-2-2-1-1-2">which is 4 out of 4 points,<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="homework_expectations-2-2-1-2">S (Satisfactory)<div class="autopermalink" data-description="Item: S (Satisfactory)"><a href="#homework_expectations-2-2-1-2" title="Copy heading and permalink for Item: S (Satisfactory)" aria-label="Copy heading and permalink for Item: S (Satisfactory)">🔗</a></div>
+</dt>
+<dd><div class="para" id="homework_expectations-2-2-1-2-2">which is 3 out of 4 points, or<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-2-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="homework_expectations-2-2-1-3">NY (not yet)<div class="autopermalink" data-description="Item: NY (not yet)"><a href="#homework_expectations-2-2-1-3" title="Copy heading and permalink for Item: NY (not yet)" aria-label="Copy heading and permalink for Item: NY (not yet)">🔗</a></div>
+</dt>
+<dd><div class="para" id="homework_expectations-2-2-1-3-2">which is 0 out of 4 points.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-2-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="homework_expectations-2-3">
+<div class="para">If you earn “S” or “NY”, you may revise and resubmit that exercise according to the following parameters:</div>
+<ol class="decimal" id="homework_expectations-2-3-1">
+<li id="homework_expectations-2-3-1-1">
+<div class="para" id="homework_expectations-2-3-1-1-1">Make sure you include the problem number.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#homework_expectations-2-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="homework_expectations-2-3-1-2">
+<div class="para" id="homework_expectations-2-3-1-2-1">Rewrite your entire solution as if you are doing it for the first time (unless I direct you otherwise).  You need not restate the question in full.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#homework_expectations-2-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="homework_expectations-2-3-1-3">
+<div class="para" id="homework_expectations-2-3-1-3-1">Write at least two sentences about what you learned from re-doing the problem.  For instance, you might write “I used to think that …, but now I understand that …”<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-2-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#homework_expectations-2-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="homework_expectations-2-3-1-4">
+<div class="para" id="homework_expectations-2-3-1-4-1">You must have submitted an honest attempt on the problem by the original deadline (or requested an extension) in order to resubmit.  If you did not submit the exercise originally, see me to discuss options.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-2-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#homework_expectations-2-3-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="homework_expectations-2-3-1-5">
+<div class="para" id="homework_expectations-2-3-1-5-1">Each week, you may submit up to two revised exercises, within two weeks of their original due date.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-2-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#homework_expectations-2-3-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Grading and resubmissions"><a href="#homework_expectations-2" title="Copy heading and permalink for Paragraphs: Grading and resubmissions" aria-label="Copy heading and permalink for Paragraphs: Grading and resubmissions">🔗</a></div></section><section class="paragraphs" id="homework_expectations-3"><h3 class="heading"><span class="title">Collaboration and Academic Honesty.</span></h3>
+<div class="para" id="homework_expectations-3-2">You are allowed to collaborate on the homework since this is a good way to learn together.. However, you must be academically honest and adhere to the expectations for collaboration.  A good self-test is this: am I using collaboration for greater understanding of course content?  If yes, you are likely being academically honest.  If, however, you are using collaboration to find answers that you don’t understand in order to gain “points”, you are likely being academically dishonest.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="homework_expectations-3-3">
+<div class="para">To help support you in being a student of honesty and integrity, here are our guidelines for collaboration on written homework:</div>
+<ul class="disc" id="homework_expectations-3-3-1">
+<li id="homework_expectations-3-3-1-1">
+<div class="para" id="homework_expectations-3-3-1-1-1">“Collaboration” means “working together at roughly the same stage of the exercise”.  It’s not a collaboration if one person does the work and then shares the completed product with another.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-3-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#homework_expectations-3-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="homework_expectations-3-3-1-2">
+<div class="para" id="homework_expectations-3-3-1-2-1">You may ask me at any time up to 24 hours before a homework set is due about the ideas in an exercise and even for hints, provided you have made an honest attempt at the exercise before asking me.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-3-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#homework_expectations-3-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="homework_expectations-3-3-1-3">
+<div class="para" id="homework_expectations-3-3-1-3-1">You must write your solutions in your own words, and the words you write need to make sense to you.  You should be able to explain your thinking aloud to me if I were to ask you about it.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-3-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#homework_expectations-3-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="homework_expectations-3-3-1-4">
+<div class="para" id="homework_expectations-3-3-1-4-1">You may not collaborate with people outside our class on homework exercises: not other students, not tutors in the math center, not other professors.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-3-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#homework_expectations-3-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="homework_expectations-3-3-1-5">
+<div class="para" id="homework_expectations-3-3-1-5-1">You may not use internet resources other than our textbook and Sage: not Google generally, not Chegg, not ChatGPT, not other online “help” resources.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-3-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#homework_expectations-3-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="homework_expectations-3-3-1-6">
+<div class="para" id="homework_expectations-3-3-1-6-1">You may not copy from any other source (another student or the internet).  Again: you can ask me for help and support.  Please do this instead of resorting to any kind of academic dishonesty.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-3-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#homework_expectations-3-3-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Collaboration and Academic Honesty"><a href="#homework_expectations-3" title="Copy heading and permalink for Paragraphs: Collaboration and Academic Honesty" aria-label="Copy heading and permalink for Paragraphs: Collaboration and Academic Honesty">🔗</a></div></section><section class="paragraphs" id="homework_expectations-4"><h3 class="heading"><span class="title">Writing mathematics well.</span></h3>
+<div class="para" id="homework_expectations-4-2">Here is an example from one of a recent MTH 204 course.  There’s a screenshot of a portion of one problem below, and the full problem solution in the example link above.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;">
+<img src="external/images/hmk-sample.png" class="contained" alt="A photograph of exemplary student work that demonstrates the principles described below"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="homework_expectations-4-3-description"><div class="para" id="homework_expectations-4-3-2-1">A photograph of exemplary student work that demonstrates the principles described below<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<div class="para logical" id="homework_expectations-4-4">
+<div class="para">Here’s why this is well done:</div>
+<ul class="disc" id="homework_expectations-4-4-1">
+<li id="homework_expectations-4-4-1-1">
+<div class="para" id="homework_expectations-4-4-1-1-1">The writer states the question they are responding to and provides detailed thinking about their solution.  Full reasoning is provided!<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-4-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#homework_expectations-4-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="homework_expectations-4-4-1-2">
+<div class="para" id="homework_expectations-4-4-1-2-1">Every thought is a complete sentence with subject and verb (the “equals” sign is a verb).<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-4-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#homework_expectations-4-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="homework_expectations-4-4-1-3">
+<div class="para" id="homework_expectations-4-4-1-3-1">They use proper notation that follows standard mathematical conventions<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-4-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#homework_expectations-4-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="homework_expectations-4-4-1-4">
+<div class="para" id="homework_expectations-4-4-1-4-1">If you read the full example, you see that their answers/conclusions are clear and easy to find.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-4-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#homework_expectations-4-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Writing mathematics well"><a href="#homework_expectations-4" title="Copy heading and permalink for Paragraphs: Writing mathematics well" aria-label="Copy heading and permalink for Paragraphs: Writing mathematics well">🔗</a></div></section><section class="paragraphs" id="homework_expectations-5"><h3 class="heading"><span class="title">Overall Expectations.</span></h3>
+<div class="para logical" id="homework_expectations-5-2">
+<div class="para">For each of these assignments, here are expectations for how you present your work.</div>
+<ol class="decimal" id="homework_expectations-5-2-1">
+<li id="homework_expectations-5-2-1-1">
+<div class="para" id="homework_expectations-5-2-1-1-1">Use your best handwriting.  Work in pencil.  (Typeset work is certainly acceptable, but not required.)<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-5-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#homework_expectations-5-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="homework_expectations-5-2-1-2">
+<div class="para" id="homework_expectations-5-2-1-2-1">Provide a careful statement of each problem.  (Writing simply “#3” and then your answer is insufficient; it is not necessary to re-state every word, but you should at least provide a summary to indicate the context.  Clearly state the exercise number prior to every problem statement: “Exercise #3: Consider each matrix below …”.)<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-5-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#homework_expectations-5-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="homework_expectations-5-2-1-3">
+<div class="para" id="homework_expectations-5-2-1-3-1">As noted above in the “writing mathematics” section, explanations are required: write in complete sentences, using correct spelling, punctuation, and grammar.  The reasoning that leads to answers is at least as important as the answers that result.  For example, you might write “Through row operations, we see that x = 3, y = -2, z = 7, and thus the original system has a unique solution.”  Every homework exercise should have at least one complete sentence that either states what you plan to do or what you have found.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-5-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#homework_expectations-5-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="homework_expectations-5-2-1-4">
+<div class="para" id="homework_expectations-5-2-1-4-1">Whenever a picture or image may be helpful, include one. And label each appropriately; an image without labels lacks meaning.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-5-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#homework_expectations-5-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="homework_expectations-5-2-1-5">
+<div class="para" id="homework_expectations-5-2-1-5-1">Use correct mathematical language.  We will place key emphasis on language throughout the course.  For instance, from MTH 204 it would be valid to say “Thus, we have shown that the system of equations is inconsistent,” but it would be incorrect to say “Thus, we have shown that the matrix is inconsistent.”  The term inconsistent applies to a system of equations, but not a matrix itself.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-5-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#homework_expectations-5-2-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="homework_expectations-5-2-1-6">
+<div class="para" id="homework_expectations-5-2-1-6-1">For most problems, you should think of your work in two phases: (a) figure out what’s going on mathematically, which could involve crossing out work or backtracking, and (b) writing up your thinking carefully.  Communication is extremely important so please think about separating these two tasks.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-5-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#homework_expectations-5-2-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="homework_expectations-5-3">These assignments are usually not the type that you can sit down and do all of the problems the day they are due.  Rather, they will take careful thought well in advance.  Working regularly and consistently over several days’ time will serve you well.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="homework_expectations-5-4">Your best work is expected on each homework assignment. Planning ahead and giving yourself an appropriate amount of time to work will enable you to meet these standards.  Consider these assignments your opportunity to show me how well you understand recent material.<div class="autopermalink" data-description="Paragraph"><a href="#homework_expectations-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Overall Expectations"><a href="#homework_expectations-5" title="Copy heading and permalink for Paragraphs: Overall Expectations" aria-label="Copy heading and permalink for Paragraphs: Overall Expectations">🔗</a></div></section><div class="autopermalink" data-description="Section: Written homework expectations"><a href="#homework_expectations" title="Copy heading and permalink for Section: Written homework expectations" aria-label="Copy heading and permalink for Section: Written homework expectations">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="targets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="course-notes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

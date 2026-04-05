@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Introduction to linear systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MTH 204:  Linear Algebra I">
+<meta property="book:author" content="David Austin">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.f6b4a33441cf25ab.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.720279673ae692d7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MTH 204:  Linear Algebra I</span> <span class="subtitle">Winter 2026</span></a></h1>
+<p class="byline">David Austin</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="activities.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="gaussian-elimination.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\avec}{{\mathbf a}}
+\newcommand{\bvec}{{\mathbf b}}
+\newcommand{\cvec}{{\mathbf c}}
+\newcommand{\dvec}{{\mathbf d}}
+\newcommand{\dtil}{\widetilde{\mathbf d}}
+\newcommand{\evec}{{\mathbf e}}
+\newcommand{\fvec}{{\mathbf f}}
+\newcommand{\nvec}{{\mathbf n}}
+\newcommand{\pvec}{{\mathbf p}}
+\newcommand{\qvec}{{\mathbf q}}
+\newcommand{\svec}{{\mathbf s}}
+\newcommand{\tvec}{{\mathbf t}}
+\newcommand{\uvec}{{\mathbf u}}
+\newcommand{\vvec}{{\mathbf v}}
+\newcommand{\wvec}{{\mathbf w}}
+\newcommand{\xvec}{{\mathbf x}}
+\newcommand{\yvec}{{\mathbf y}}
+\newcommand{\zvec}{{\mathbf z}}
+\newcommand{\rvec}{{\mathbf r}}
+\newcommand{\mvec}{{\mathbf m}}
+\newcommand{\zerovec}{{\mathbf 0}}
+\newcommand{\onevec}{{\mathbf 1}}
+\newcommand{\real}{{\mathbb R}}
+\newcommand{\complex}{{\mathbb C}}
+\newcommand{\integer}{{\mathbb Z}}
+\newcommand{\poly}{{\mathbb P}}
+\newcommand{\field}{{\mathbb F}}
+\newcommand{\twovec}[2]{\left[\begin{array}{r}#1 \\ #2
+\end{array}\right]}
+\newcommand{\ctwovec}[2]{\left[\begin{array}{c}#1 \\ #2
+\end{array}\right]}
+\newcommand{\threevec}[3]{\left[\begin{array}{r}#1 \\ #2 \\ #3
+\end{array}\right]}
+\newcommand{\cthreevec}[3]{\left[\begin{array}{c}#1 \\ #2 \\ #3
+\end{array}\right]}
+\newcommand{\fourvec}[4]{\left[\begin{array}{r}#1 \\ #2 \\ #3 \\ #4
+\end{array}\right]}
+\newcommand{\cfourvec}[4]{\left[\begin{array}{c}#1 \\ #2 \\ #3 \\ #4
+\end{array}\right]}
+\newcommand{\fivevec}[5]{\left[\begin{array}{r}#1 \\ #2 \\ #3 \\
+#4 \\ #5 \\ \end{array}\right]}
+\newcommand{\cfivevec}[5]{\left[\begin{array}{c}#1 \\ #2 \\ #3 \\
+#4 \\ #5 \\ \end{array}\right]}
+\newcommand{\mattwo}[4]{\left[\begin{array}{rr}#1 \amp #2 \\ #3 \amp #4 \\ \end{array}\right]}
+\newcommand{\laspan}[1]{\text{Span}\{#1\}}
+\newcommand{\bcal}{{\cal B}}
+\newcommand{\ccal}{{\cal C}}
+\newcommand{\dcal}{{\cal D}}
+\newcommand{\scal}{{\cal S}}
+\newcommand{\wcal}{{\cal W}}
+\newcommand{\ecal}{{\cal E}}
+\newcommand{\fcal}{{\cal F}}
+\newcommand{\coords}[2]{\left\{#1\right\}_{#2}}
+\newcommand{\gray}[1]{\color{gray}{#1}}
+\newcommand{\lgray}[1]{\color{lightgray}{#1}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\row}{\text{Row}}
+\newcommand{\col}{\text{Col}}
+\renewcommand{\row}{\text{Row}}
+\newcommand{\nul}{\text{nul}}
+\newcommand{\range}{\text{range}}
+\newcommand{\var}{\text{Var}}
+\newcommand{\corr}{\text{corr}}
+\newcommand{\len}[1]{\left|#1\right|}
+\newcommand{\bbar}{\overline{\bvec}}
+\newcommand{\bhat}{\widehat{\bvec}}
+\newcommand{\bperp}{\bvec^\perp}
+\newcommand{\xhat}{\widehat{\xvec}}
+\newcommand{\vhat}{\widehat{\vvec}}
+\newcommand{\uhat}{\widehat{\uvec}}
+\newcommand{\what}{\widehat{\wvec}}
+\newcommand{\Sighat}{\widehat{\Sigma}}
+\newcommand{\basis}[2]{#1_1,#1_2,\ldots,#1_#2}
+\newcommand{\inner}[2]{\langle #1, #2\rangle}
+\newcommand{\conj}[1]{\overline{#1}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Course outline</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">General Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">About MTH 204</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-5" class="internal"><span class="title">Assessment and how grades will be determined</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-6" class="internal"><span class="title">Proficiency quizzes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-7" class="internal"><span class="title">Submitting work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8" class="internal"><span class="title">Expectations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9" class="internal"><span class="title">More general information and resources</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10" class="internal"><span class="title">Academic Integrity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="targets.html" class="internal"><span class="title">Learning targets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="homework-expectations.html" class="internal"><span class="title">Written homework expectations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Monday 8/22</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Wednesday 8/24</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Monday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Wednesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-4" class="internal"><span class="title">Friday</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="intro-linear-systems.html" class="internal"><span class="title">Introduction to linear systems</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="gaussian-elimination.html" class="internal"><span class="title">Gaussian elimination</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">MTH 406: Generalized eigenspaces</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="generalized-eigenspaces.html" class="internal"><span class="title">Generalized Eigenspaces</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="math204-homework.html" class="internal"><span class="title">Written Homework</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="math204-homework-3.html" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="intro-linear-systems" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Introduction to linear systems</span><div class="print-links"><a href="?printpreview=intro-linear-systems" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<div class="para" id="intro-linear-systems-2">
+<em class="alert">MTH 204:  January 13</em><div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="introduction" id="intro-linear-systems-3"><div class="para" id="intro-linear-systems-3-1">This course is about <em class="emphasis">linear equations</em>. An example of a linear equation is <span class="process-math">\(2x + 3y = -1\text{.}\)</span> Notice that variables are not squared or multiplied together; the equation is just formed by multiplying the variables by coefficients and adding. The equation <span class="process-math">\(\sin(e^x+y) = 10\)</span> is not linear.<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><article class="exercise exercise-like" id="intro-linear-systems-4"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="intro-linear-systems-4-1"><div class="para logical" id="intro-linear-systems-4-1-1">
+<div class="para">To get started, let’s begin with a single linear equation</div>
+<div class="displaymath process-math" id="intro-linear-systems-4-1-1-1">
+\begin{equation*}
+y = x+1\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="intro-linear-systems-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="intro-linear-systems-4-2-1">Plot the solutions to this equation below. What can you say about the number of points <span class="process-math">\((x,y)\)</span> that satisfy this equation?<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+<img src="generated/prefigure/empty-4-01-1.svg" role="img" class="contained" alt="A coordinate grid and set of axes"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="intro-linear-systems-4-2-2-description"><div class="para" id="intro-linear-systems-4-2-2-2-1">A coordinate grid and set of axes.  Both the horizontal and vertical axes runs from negative four to positive four.<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<div class="autopermalink" data-description="Task 1.a"><a href="#intro-linear-systems-4-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="intro-linear-systems-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="intro-linear-systems-4-3-1-1">
+<div class="para">Now we’ll add another equation so that we’re considering a <em class="emphasis">system</em> of two linear equations:</div>
+<div class="displaymath process-math" id="intro-linear-systems-4-3-1-1-2">
+\begin{equation*}
+\begin{aligned}
+y \amp = x+1 \\
+y \amp = x-1\text{.} \\
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="intro-linear-systems-4-3-1-2">Plot the two lines below. How many points <span class="process-math">\((x,y)\)</span> satisfy both equations? <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+<img src="generated/prefigure/empty-4-01-2.svg" role="img" class="contained" alt="A coordinate grid and set of axes"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="intro-linear-systems-4-3-1-2-2-description"><div class="para" id="intro-linear-systems-4-3-1-2-2-2-1">A coordinate grid and set of axes.  Both the horizontal and vertical axes runs from negative four to positive four.<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-3-1-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.b"><a href="#intro-linear-systems-4-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="intro-linear-systems-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="intro-linear-systems-4-4-1-1">
+<div class="para">Here’s another system. Plot the two lines and determine how many points <span class="process-math">\((x,y)\)</span> satisfy both equations.</div>
+<div class="displaymath process-math" id="intro-linear-systems-4-4-1-1-2">
+\begin{equation*}
+\begin{aligned}
+y \amp = x+1 \\
+y \amp = 2x-1\text{.} \\
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+<img src="generated/prefigure/empty-4-01-3.svg" role="img" class="contained" alt="A coordinate grid and set of axes"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="intro-linear-systems-4-4-1-1-3-description"><div class="para" id="intro-linear-systems-4-4-1-1-3-2-1">A coordinate grid and set of axes.  Both the horizontal and vertical axes runs from negative four to positive four.<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-4-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.c"><a href="#intro-linear-systems-4-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div></article><article class="task exercise-like" id="intro-linear-systems-4-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para logical" id="intro-linear-systems-4-5-1-1">
+<div class="para">Here’s a system of three equations.</div>
+<div class="displaymath process-math" id="intro-linear-systems-4-5-1-1-1">
+\begin{equation*}
+\begin{aligned}
+y \amp = x+1 \\
+y \amp = 2x-1 \\
+y \amp = -x.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="intro-linear-systems-4-5-1-2">Create the plot and determine the number of points that satisfy all three equations. <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;">
+<img src="generated/prefigure/empty-4-01-4.svg" role="img" class="contained" alt="A coordinate grid and set of axes"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="intro-linear-systems-4-5-1-2-1-description"><div class="para" id="intro-linear-systems-4-5-1-2-1-2-1">A coordinate grid and set of axes.  Both the horizontal and vertical axes runs from negative four to positive four.<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-5-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-4-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.d"><a href="#intro-linear-systems-4-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#intro-linear-systems-4" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="intro-linear-systems-5"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="intro-linear-systems-5-1-1">Circle the possibilities below: <blockquote class="blockquote" id="intro-linear-systems-5-1-1-1">
+<div class="para" id="intro-linear-systems-5-1-1-1-1">
+<em class="emphasis">Given a system of linear equations, what are the possibilities for the number of points that satisfy all the equations:<div class="displaymath process-math" id="intro-linear-systems-5-1-1-1-1-1-1">
+\begin{equation*}
+0 \hspace{0.5in} 1 \hspace{0.5in} 2 \hspace{0.5in} 3
+\hspace{0.5in} 4 \hspace{0.5in} 5 \hspace{0.5in}
+\ldots \hspace{0.5in} \infty
+\end{equation*}
+</div></em><div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-5-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Quotation"><a href="#intro-linear-systems-5-1-1-1" title="Copy heading and permalink for Quotation" aria-label="Copy heading and permalink for Quotation">🔗</a></div>
+</blockquote>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="intro-linear-systems-5-1-2">Generally speaking, as we add more equations, what happens to the number of solutions?<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#intro-linear-systems-5" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="intro-linear-systems-6"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="intro-linear-systems-6-1-1">
+<div class="para">Instead of graphing, let’s try to determine the solutions to a system of linear equations algebraically.</div>
+<div class="displaymath process-math" id="intro-linear-systems-6-1-1-1">
+\begin{equation*}
+\begin{aligned}
+x + 2y \amp = -1 \\
+2x - y \amp = 8
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">To do this, solve the first equation for <span class="process-math">\(x\)</span> and substitute it into the second equation. The resulting equation only depends on <span class="process-math">\(y\)</span> so you should be able to solve it in the usual way.</div>
+<div class="workspace" data-space="1.5in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#intro-linear-systems-6" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="intro-linear-systems-7"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="intro-linear-systems-7-1"><div class="para" id="intro-linear-systems-7-1-1">For the following linear systems, determine the number of solutions. If there is exactly one solution, state what that solution is, such as <span class="process-math">\((x,y,z)=(1,-3,4)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="intro-linear-systems-7-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="intro-linear-systems-7-2-1">
+<div class="displaymath process-math" id="intro-linear-systems-7-2-1-1">
+\begin{equation*}
+\begin{alignedat}{4}
+x \amp {} {} \amp  \amp {}{} \amp \amp {}={} \amp -3 \\
+\amp \amp y \amp {}{} \amp  \amp {}={} \amp 2 \\
+\amp \amp \amp \amp z \amp {}={} \amp 4. \\
+\end{alignedat}
+\end{equation*}
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.a"><a href="#intro-linear-systems-7-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="intro-linear-systems-7-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="intro-linear-systems-7-3-1">
+<div class="displaymath process-math" id="intro-linear-systems-7-3-1-1">
+\begin{equation*}
+\begin{alignedat}{4}
+\amp \amp y \amp {}{} \amp  \amp {}={} \amp 2 \\
+\amp \amp \amp \amp z \amp {}={} \amp 4 \\
+x \amp {} {} \amp  \amp {}{} \amp \amp {}={} \amp -3.
+\end{alignedat}
+\end{equation*}
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.b"><a href="#intro-linear-systems-7-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><article class="task exercise-like" id="intro-linear-systems-7-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="intro-linear-systems-7-4-1">
+<div class="displaymath process-math" id="intro-linear-systems-7-4-1-1">
+\begin{equation*}
+\begin{alignedat}{4}
+2x \amp {} {} \amp  \amp {}{} \amp \amp {}={} \amp 4 \\
+\amp \amp -3y \amp {}{} \amp  \amp {}={} \amp 3 \\
+\amp \amp \amp \amp -z \amp {}={} \amp 1. \\
+\end{alignedat}
+\end{equation*}
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-7-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.c"><a href="#intro-linear-systems-7-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div></article><article class="task exercise-like" id="intro-linear-systems-7-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para logical" id="intro-linear-systems-7-5-1">
+<div class="displaymath process-math" id="intro-linear-systems-7-5-1-1">
+\begin{equation*}
+\begin{alignedat}{4}
+-x \amp {} + {} \amp 2y \amp {}-{} \amp z \amp {}={} \amp -3 \\
+\amp \amp 3y \amp {}+{} \amp z \amp {}={} \amp -1 \\
+\amp \amp \amp \amp 2z \amp {}={} \amp 4. \\
+\end{alignedat}
+\end{equation*}
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-7-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.d"><a href="#intro-linear-systems-7-5" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div></article><article class="task exercise-like" id="intro-linear-systems-7-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para logical" id="intro-linear-systems-7-6-1">
+<div class="displaymath process-math" id="intro-linear-systems-7-6-1-1">
+\begin{equation*}
+\begin{alignedat}{4}
+x \amp  {}+{}  \amp 2y \amp {}+{}  \amp z  \amp  {}={}  \amp 4 \\
+\amp         \amp y \amp  {}-{}  \amp 3z \amp  {}={}  \amp 11 \\
+\end{alignedat}
+\end{equation*}
+</div>
+<div class="workspace" data-space="1.25in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-7-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.e"><a href="#intro-linear-systems-7-6" title="Copy heading and permalink for Task 4.e" aria-label="Copy heading and permalink for Task 4.e">🔗</a></div></article><article class="task exercise-like" id="intro-linear-systems-7-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="intro-linear-systems-7-7-1">
+<span class="process-math">\(0x {}={} 0\)</span><div class="workspace" data-space="0.7in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-7-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.f"><a href="#intro-linear-systems-7-7" title="Copy heading and permalink for Task 4.f" aria-label="Copy heading and permalink for Task 4.f">🔗</a></div></article><article class="task exercise-like" id="intro-linear-systems-7-8"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<div class="para" id="intro-linear-systems-7-8-1">
+<span class="process-math">\(0x {}={} 3\)</span><div class="workspace" data-space="0.7in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-7-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.g"><a href="#intro-linear-systems-7-8" title="Copy heading and permalink for Task 4.g" aria-label="Copy heading and permalink for Task 4.g">🔗</a></div></article><article class="task exercise-like" id="intro-linear-systems-7-9"><h4 class="heading"><span class="codenumber">(h)</span></h4>
+<div class="para" id="intro-linear-systems-7-9-1">
+<span class="process-math">\(0x+0y+0z {}={} 1\)</span><div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-7-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.h"><a href="#intro-linear-systems-7-9" title="Copy heading and permalink for Task 4.h" aria-label="Copy heading and permalink for Task 4.h">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#intro-linear-systems-7" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="intro-linear-systems-8"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="intro-linear-systems-8-1-1">
+<div class="para">Consider the following system of linear equations and follow these directions carefully:</div>
+<div class="displaymath process-math" id="intro-linear-systems-8-1-1-1">
+\begin{equation*}
+\begin{alignedat}{4}
+x \amp  {}+{}  \amp 2y \amp  \amp  \amp  {}={}  \amp 4 \\
+2x \amp  {}+{}  \amp y \amp  {}-{}  \amp 3z \amp  {}={}  \amp 11 \\
+\end{alignedat}
+\end{equation*}
+</div>
+<div class="para">Solve the first equation for <span class="process-math">\(x\)</span> and substitute it into the second equation. Then write the new system of equations that results.</div>
+<div class="workspace" data-space="1.5in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="intro-linear-systems-8-1-2">
+<div class="para">Notice how we wrote the equations with the variables arranged in columns. As a shorthand, we will record the system of equations in an <em class="emphasis">augmented matrix</em>. For instance, the original set of two equations can be written as</div>
+<div class="displaymath process-math" id="intro-linear-systems-8-1-2-2">
+\begin{equation*}
+\left[ \begin{array}{ccc|c} 1 \amp 2 \amp 0 \amp 4 \\ 2 \amp 1 \amp -3 \amp 11 \\ \end{array}\right]
+\end{equation*}
+</div>
+<div class="para">Each row corresponds to an equation, the vertical bar represents the equals sign, and each column left of the bar corresponds to a variable. Write the augmented matrix for the system you found after solving for <span class="process-math">\(x\)</span> and substituting it into the second equation.</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-8-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="intro-linear-systems-8-1-3">In terms of augmented matrices, the process of solving for <span class="process-math">\(x\)</span> and substituting into the second equation can be more easily performed by multiplying the first row of the augmented matrix by <span class="process-math">\(-2\)</span> and adding it to the second row (this changes only the second row). Verify that this results in the same augmented matrix you found above. How do you see that <span class="process-math">\(x\)</span> has been eliminated from the second equation?<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-8-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="intro-linear-systems-8-1-4">This process is called a <em class="emphasis">row replacement</em> operation. We can also <em class="emphasis">interchange</em> two rows, which corresponds to writing the equations in a different order, and <em class="emphasis">scale</em> a row by multiplying it by a nonzero number.<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-8-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#intro-linear-systems-8" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div></article><article class="assemblage assemblage-like" id="intro-linear-systems-9"><div class="para logical" id="intro-linear-systems-9-1">
+<div class="para">Make sure you can answer the following questions:</div>
+<ul class="disc" id="intro-linear-systems-9-1-1">
+<li id="intro-linear-systems-9-1-1-1">
+<div class="para" id="p-derived-intro-linear-systems-9-1-1-1">What is a linear equation and what is a system of linear equations?</div>
+<div class="autopermalink" data-description="Item"><a href="#intro-linear-systems-9-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="intro-linear-systems-9-1-1-2">
+<div class="para" id="p-derived-intro-linear-systems-9-1-1-2">What are the three possibilities for the number of solutions to a system of linear equations?</div>
+<div class="autopermalink" data-description="Item"><a href="#intro-linear-systems-9-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="intro-linear-systems-9-1-1-3">
+<div class="para" id="p-derived-intro-linear-systems-9-1-1-3">How does this number of solutions typically change as we add more equations?</div>
+<div class="autopermalink" data-description="Item"><a href="#intro-linear-systems-9-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="intro-linear-systems-9-1-1-4">
+<div class="para" id="p-derived-intro-linear-systems-9-1-1-4">What is an augmented matrix and how does it represent a system of linear equations?</div>
+<div class="autopermalink" data-description="Item"><a href="#intro-linear-systems-9-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="intro-linear-systems-9-1-1-5">
+<div class="para" id="p-derived-intro-linear-systems-9-1-1-5">What are three operations we can perform on an augmented matrix without changing the solution?</div>
+<div class="autopermalink" data-description="Item"><a href="#intro-linear-systems-9-1-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#intro-linear-systems-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage"><a href="#intro-linear-systems-9" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div></article><div class="autopermalink" data-description="Worksheet: Introduction to linear systems"><a href="#intro-linear-systems" title="Copy heading and permalink for Worksheet: Introduction to linear systems" aria-label="Copy heading and permalink for Worksheet: Introduction to linear systems">🔗</a></div></section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="activities.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="gaussian-elimination.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>diagcess.Base.init()</script>
+</body>
+</html>
