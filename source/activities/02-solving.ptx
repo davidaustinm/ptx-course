@@ -5,6 +5,13 @@
 
   <p><alert>MTH 204:  January 15</alert></p>
 
+  <introduction>
+    <p>In this activity, we will develop an algorithm that transforms
+    a system of linear equations into a specific form, called
+    <term>reduced row echelon form</term>, that allows us to instantly
+    draw conclusions about the set of solutions.</p>
+  </introduction>
+  
 <exercise>
   <statement>
     <p workspace="1in">

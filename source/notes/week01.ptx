@@ -1,35 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="notes-week-01">
-  <title>Week 1</title>
+  <title>Week 1:  January 12</title>
 
   <introduction>
     <p>
-      This is an outline of the topics we covered in the first week of class.
+      This week begins with an exploration of systems of linear
+      equations and the possibilities for sets of solutions.  Then we
+      will develop an algorithm that transforms a system of equations
+      into a form, called <term>reduced row echelon form</term>, that
+      enables us to quickly draw conclusions about its set of
+      solutions.
     </p>
   </introduction>
 
   <!-- Can also be <handout> instead of <subsection> to get a printable version -->
   <subsection>
-    <title>Monday 8/22</title>
+    <title>Tuesday:  January 13</title>
 
     <p>
+      <ol>
+        <li>Community building</li>
+        <li>Activity: <xref ref="intro-linear-systems" text="custom">
+          Introduction to linear systems
+        </xref></li>
+        <li>
+          <p>Upcoming assignments:
+          <ol>
+            <li>Complete the student survey</li>
+            <li>Complete Daily Prep 01 before Thursday's class</li>
+          </ol>
+          </p>
+        </li>
+      </ol>
     </p>
   </subsection>
 
 
   <subsection>
-    <title>Wednesday 8/24</title>
+    <title>Thursday: January 15</title>
 
     <p>
+      <ol>
+        <li>Activity: <xref ref="gaussian-elimination" text="custom">
+        Gaussian elimination</xref></li>
+        <li>
+          <p>Upcoming assignments:
+          <ol>
+            <li>Complete Daily Prep 02 before Tuesday's class</li>
+            <li>Read the
+            <xref ref="homework-expectations" text="custom">
+              Homework Expectations document
+            </xref>
+            </li>
+                  
+            <li>
+              <xref ref="math204-homework" text="custom">
+                Homework problems 1 and 2
+              </xref>, due Thursday, January 22
+            </li>
+          </ol>
+          </p>
+        </li>
+      </ol>
     </p>
   </subsection>
 
-
-  <subsection>
-    <title>Friday 8/26</title>
-
-    <p>
-    </p>
-  </subsection>
 </section>

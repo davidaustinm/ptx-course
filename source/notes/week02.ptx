@@ -1,28 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="notes-week-02">
-  <title>Week 2</title>
+  <title>Week 2:  January 19</title>
+
+  <introduction>
+    <p>
+      Last week we introduced the reduced row echelon form of a matrix
+      and developed an algorithm called Gaussian elimination that
+      transformed a matrix into its reduced row echelon form.  In
+      our meetings this week, we will explore the significance of the
+      reduced row echelon form, find a way to automate Gaussian
+      elimination, and recast these questions into a new algebraic
+      operation.
+    </p>
+  </introduction>
 
   <subsection>
-    <title>Monday</title>
+    <title>Tuesday:  January 20</title>
 
     <p>
+      <ol>
+        <li>Activity:
+          <xref ref="rref-sage" text="custom">
+            Reduced row echelon form
+          </xref>
+        </li>
+        <li>
+          <p>Upcoming assignments:
+          <ol>
+            <li>Complete Daily Prep 02 before Tuesday's class</li>
+            <li>
+              <xref ref="math204-homework" text="custom">
+                Homework problems 1 and 2
+              </xref>,
+              due Thursday, January 22
+            </li>
+            <li>
+              <xref ref="targets" text="custom">
+                Learning target 01
+              </xref>
+              on Thursday
+            </li>
+          </ol>
+          </p>
+        </li>
+      </ol>
     </p>
   </subsection>
 
 
   <subsection>
-    <title>Wednesday</title>
+    <title>Thursday: January 22</title>
 
     <p>
+      <ol>
+        <li>Activity:  Matrix multiplication
+        </li>
+        <li>
+          <p>Upcoming assignments:
+          <ol>
+            <li>WebWork Homework 01, due Sunday at 11:59pm</li>
+            <li>Complete Daily Prep 03 before Tuesday's class</li>
+            <li>
+              <xref ref="math204-homework" text="custom">
+                Homework problems 3 and 4
+              </xref>,
+              due next Thursday, January 29
+            </li>
+            <li>
+              <xref ref="targets" text="custom">
+                Learning target 01
+              </xref>
+            </li>              
+          </ol>
+          </p>
+        </li>
+      </ol>
     </p>
   </subsection>
 
-
-  <subsection>
-    <title>Friday</title>
-
-    <p>
-    </p>
-  </subsection>
 </section>

@@ -291,7 +291,7 @@
         matrix for the system you found after solving for <m>x</m> and
         substituting it into the second equation.
       </p>
-      <p workspace="1.5">
+      <p workspace="1.5in">
         In terms of augmented matrices, the process of solving for
         <m>x</m> and substituting into the second equation can be more
         easily performed by multiplying the first row of the augmented

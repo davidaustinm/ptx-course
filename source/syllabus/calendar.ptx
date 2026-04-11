@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<chapter xml:id="course-calendar"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Course calendar</title>
+
+  <introduction>
+    <p>
+      This calendar shows both the activities and assignments for our
+      course.  Some changes may be made throughout the semester, but I
+      will always make sure they are announced in class and on
+      Blackboard.
+    </p>
+
+    <tabular>
+      <col right="minor"/>
+      <col/>
+        <row header="yes" bottom="major">
+          <cell>Tuesday</cell>
+          <cell>Thursday</cell>
+        </row>
+        <row bottom="minor" valign="top">
+          <cell>
+            <paragraphs>
+              <title>January 13</title>
+              <p>Activity:
+              <xref ref="intro-linear-systems" text="custom">
+                Systems of linear equations
+              </xref>
+              </p>
+            </paragraphs>
+          </cell>
+          <cell>
+            <paragraphs>
+              <title>January 15</title>
+              <p>Activity:
+              <xref ref="gaussian-elimination" text="custom">
+                Gaussian elimination
+              </xref>
+              </p>
+              <p>Daily prep 01 due</p>
+            </paragraphs>
+          </cell>
+        </row>
+
+        <row valign="top">
+          <cell>
+            <paragraphs>
+              <title>January 20</title>
+              <p>Activity:
+              <xref ref="rref-sage" text="custom">
+                Reduced row echelon form and Sage
+              </xref></p>
+              <p>Daily prep 02 due</p>
+            </paragraphs>
+          </cell>
+          <cell>
+            <paragraphs>
+              <title>January 22</title>
+              <p>Activity: Matrix multiplication</p>
+              <p>Daily prep 03 due</p>
+              <p>
+                <xref ref="math204-homework" text="custom">
+                  Homework problems 1 and 2
+                </xref>
+                due
+              </p>
+            </paragraphs>
+          </cell>
+        </row>
+      </tabular>
+
+
+  </introduction>
+</chapter>
