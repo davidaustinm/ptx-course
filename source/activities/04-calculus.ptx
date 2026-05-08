@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<worksheet xml:id="worksheet-tangent"
+           xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Tangent line approximations</title>
+
+  <p><alert>MTH 201: January 20</alert></p>
+
+  <xi:include href="include/tangent-objectives.ptx"/>
+
+  <proof>
+    <listing>
+      <program>
+        <code><xi:include href="include/tangent-objectives.ptx"
+        parse="text"/>
+        </code>
+      </program>
+      <caption><pretext/> source for the objectives</caption>
+    </listing>
+  </proof>
+
+  <xi:include href="include/tangent-intro.ptx"/>
+
+  <proof>
+    <listing>
+      <program>
+        <code><xi:include href="include/tangent-intro.ptx" parse="text"/></code>
+      </program>
+      <caption><pretext/> source for the introduction</caption>
+    </listing>
+  </proof>
+
+  <introduction>
+    <p>Remember that a matrix in reduced row echelon form is
+    characterized by these properties:
+    <ol>
+      <li><p>If the entries in a row are all zero, then the same is
+      true of any row below it.</p></li>
+      <li><p>If we move across a row from left to right, the first
+      nonzero entry we encounter is 1. We call this entry the
+      <term>leading entry</term> in the row.</p></li>
+      <li><p>The leading entry in any row is to the right of the leading
+      entries in all the rows above it. </p></li>
+      <li><p>A leading entry is the only nonzero entry in its
+      column.</p></li>
+    </ol>
+    </p>
+  </introduction>
+
+  <exercise>
+    <introduction>
+      <p>
+      Consider each of the following augmented matrices.  Determine if
+      the matrix is in reduced row echelon form.  If it is not, perform a
+      sequence of scaling, interchange, and replacement operations to
+      obtain a row equivalent matrix that is in reduced row echelon form.
+      Then use the reduced row echelon matrix to determine whether there
+      is a single solution, infinitely many solutions, or no solutions.
+      If there are infinitely many, identify free and basic variables.
+      </p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>
+          <m>
+          \left[
+          \begin{array}{rrr|r}
+          1 \amp -1 \amp 2 \amp -2 \\
+          0 \amp 1 \amp 0 \amp 3 \\
+          0 \amp 0 \amp 1 \amp 1 \\
+          \end{array}
+          \right]
+          </m>
+        </p>
+      </statement>
+    </task>
+
+    <task workspace="2in">
+      <statement>
+        <p>
+          <m>
+          \left[
+          \begin{array}{rrr|r}
+          0 \amp 0 \amp 0 \amp 0 \\
+          0 \amp 1 \amp 3 \amp 2 \\
+          1 \amp -2 \amp 2 \amp 8 \\
+          \end{array}
+          \right]
+          </m>
+        </p>
+      </statement>
+    </task>
+
+    <task workspace="2in">
+      <statement>
+        <p>
+          <m>
+          \left[
+          \begin{array}{rrr|r}
+          1 \amp 0 \amp 4 \amp 2 \\
+          0 \amp 0 \amp -1 \amp 2 \\
+          0 \amp 0 \amp 1 \amp -2 \\
+          \end{array}
+          \right]
+          </m>
+        </p>
+      </statement>
+    </task>
+
+    <task workspace="2in">
+      <statement>
+        <p>
+          <m>
+          \left[
+          \begin{array}{rrr|r}
+          0 \amp 1 \amp 3 \amp 2 \\
+          0 \amp 0 \amp 0 \amp 1 \\
+          1 \amp 0 \amp 4 \amp 2 \\
+          \end{array}
+          \right]
+          </m>
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that the reduced row echelon form of a matrix looks
+        like
+        <m>
+        \left[
+        \begin{array}{rrrr|r}
+        1 \amp * \amp 0 \amp * \amp 0 \\
+        0 \amp 0 \amp 1 \amp * \amp 0 \\
+        0 \amp 0 \amp 0 \amp 0 \amp 1 \\
+        \end{array}
+        \right]
+        </m>.
+        What, if anything, does the last row tell you about the
+        solution space?
+        </p>
+      </statement>
+    </task>
+
+    <task workspace="1in">
+      <statement>
+        <p>
+          Suppose that the reduced row echelon form of a matrix looks like
+          <m>
+          \left[
+          \begin{array}{rrrr|r}
+          1 \amp * \amp 0 \amp * \amp * \\
+          0 \amp 0 \amp 1 \amp * \amp * \\
+          0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+          \end{array}
+          \right]
+          </m>.
+          What, if anything, does the last row tell you about the solution
+          space?
+        </p>
+      </statement>
+    </task>
+
+    <task workspace="1in">
+      <statement>
+        <p>
+          If a linear system has no solutions, how can you tell by looking at
+          the reduced row echelon form of its augmented matrix.
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task>
+      <statement>
+        <p>If a matrix is in reduced row echelon form, remember that
+        the <term>leading entries</term> are the leftmost ones in a
+        row.  We refer to the locations where the leading entries
+        occur as <term>pivot positions.</term>
+        </p>
+
+        <p>
+          Circle the pivot positions in the reduced row echelon form
+          below:
+          <md>
+            \left[
+            \begin{array}{rrrr|r}
+            1 \amp 3 \amp 0 \amp 2 \amp 0 \\
+            0 \amp 0 \amp 1 \amp -1 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0 \amp 1 \\
+            \end{array}
+            \right]
+          </md>.
+        </p>
+      </statement>
+    </task>
+
+    <task workspace="0.9in">
+      <statement>
+        <p>
+          If a system of linear equations has no solutions, what can
+          you say about the pivot positions?
+        </p>
+      </statement>
+    </task>
+
+    <task workspace="0.9in">
+      <statement>
+        <p>
+          If a system of linear equations has infinitely many solutions, what
+          can you say about the pivot positions?
+        </p>
+      </statement>
+    </task>
+
+    <task workspace="0.9in">
+      <statement>
+        <p>
+          If a system of linear equations has exactly one solution, what can
+          you say about the pivot positions?
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
+  <assemblage>
+    <p>
+      Make sure you can answer the following questions:
+      <ol>
+        <li><p>What is the reduced row echelon form of an augmented
+        matrix and why is it useful?
+        </p></li>
+        <li><p>How does reduced row echelon form tell us that a system
+        of equations has no solutions?</p></li>
+        <li><p>How does reduced row echelon form tell us that a system of
+        equations has a single solution?
+        </p></li>
+        <li><p>How can Sage help us find the reduced row echelon form
+        of a matrix?
+        </p></li>
+        <li><p>What is a pivot position?</p></li>
+      </ol>
+    </p>
+  </assemblage>
+</worksheet>
+

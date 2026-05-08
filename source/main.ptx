@@ -57,9 +57,7 @@
       <xi:include href="./activities/01-intro.ptx"/>
       <xi:include href="./activities/02-solving.ptx"/>
       <xi:include href="./activities/03-rref.ptx"/>
-      <!--
-          <xi:include href="./activities/01-intro-activity.ptx"/>
-      -->
+      <xi:include href="./activities/04-calculus.ptx"/>
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
