@@ -19,62 +19,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="MTH 204:  Linear Algebra I">
@@ -101,16 +53,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.4';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.b76b8eace4405b9e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
-<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -266,6 +218,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="intro-linear-systems.html" class="internal"><span class="title">Introduction to linear systems</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="gaussian-elimination.html" class="internal"><span class="title">Gaussian elimination</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="rref-sage.html" class="internal"><span class="title">Reduced row echelon form</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-tangent.html" class="internal"><span class="title">Tangent line approximations</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -273,7 +226,9 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="math204-homework-3.html" class="internal"><span class="title">Exercises</span></a></div></li></ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="homework-expectations"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="homework-expectations">
+<h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Written homework expectations</span>
 </h2>
 <section class="paragraphs" id="homework-expectations-2"><h3 class="heading"><span class="title">Grading and resubmissions.</span></h3>
@@ -282,16 +237,22 @@ eBookConfig.enable_chatcodes =  false;
 <dl class="description-list">
 <dt id="homework-expectations-2-2-1-1">E (exemplary)<div class="autopermalink" data-description="Item: E (exemplary)"><a href="#homework-expectations-2-2-1-1" title="Copy heading and permalink for Item: E (exemplary)" aria-label="Copy heading and permalink for Item: E (exemplary)">🔗</a></div>
 </dt>
-<dd><div class="para" id="homework-expectations-2-2-1-1-2">which is 4 out of 4 points,<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></dd>
+<dd>
+<div class="para" id="homework-expectations-2-2-1-1-2">which is 4 out of 4 points,<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
 <dt id="homework-expectations-2-2-1-2">S (Satisfactory)<div class="autopermalink" data-description="Item: S (Satisfactory)"><a href="#homework-expectations-2-2-1-2" title="Copy heading and permalink for Item: S (Satisfactory)" aria-label="Copy heading and permalink for Item: S (Satisfactory)">🔗</a></div>
 </dt>
-<dd><div class="para" id="homework-expectations-2-2-1-2-2">which is 3 out of 4 points, or<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-2-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></dd>
+<dd>
+<div class="para" id="homework-expectations-2-2-1-2-2">which is 3 out of 4 points, or<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-2-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
 <dt id="homework-expectations-2-2-1-3">NY (not yet)<div class="autopermalink" data-description="Item: NY (not yet)"><a href="#homework-expectations-2-2-1-3" title="Copy heading and permalink for Item: NY (not yet)" aria-label="Copy heading and permalink for Item: NY (not yet)">🔗</a></div>
 </dt>
-<dd><div class="para" id="homework-expectations-2-2-1-3-2">which is 0 out of 4 points.<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-2-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></dd>
+<dd>
+<div class="para" id="homework-expectations-2-2-1-3-2">which is 0 out of 4 points.<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-2-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
 </dl>
 <div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -326,7 +287,9 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Grading and resubmissions"><a href="#homework-expectations-2" title="Copy heading and permalink for Paragraphs: Grading and resubmissions" aria-label="Copy heading and permalink for Paragraphs: Grading and resubmissions">🔗</a></div></section><section class="paragraphs" id="homework-expectations-3"><h3 class="heading"><span class="title">Collaboration and Academic Honesty.</span></h3>
+<div class="autopermalink" data-description="Paragraphs: Grading and resubmissions"><a href="#homework-expectations-2" title="Copy heading and permalink for Paragraphs: Grading and resubmissions" aria-label="Copy heading and permalink for Paragraphs: Grading and resubmissions">🔗</a></div>
+</section>
+<section class="paragraphs" id="homework-expectations-3"><h3 class="heading"><span class="title">Collaboration and Academic Honesty.</span></h3>
 <div class="para" id="homework-expectations-3-2">You are allowed to collaborate on the homework since this is a good way to learn together.. However, you must be academically honest and adhere to the expectations for collaboration.  A good self-test is this: am I using collaboration for greater understanding of course content?  If yes, you are likely being academically honest.  If, however, you are using collaboration to find answers that you don’t understand in order to gain “points”, you are likely being academically dishonest.<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="homework-expectations-3-3">
@@ -365,12 +328,16 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Collaboration and Academic Honesty"><a href="#homework-expectations-3" title="Copy heading and permalink for Paragraphs: Collaboration and Academic Honesty" aria-label="Copy heading and permalink for Paragraphs: Collaboration and Academic Honesty">🔗</a></div></section><section class="paragraphs" id="homework-expectations-4"><h3 class="heading"><span class="title">Writing mathematics well.</span></h3>
+<div class="autopermalink" data-description="Paragraphs: Collaboration and Academic Honesty"><a href="#homework-expectations-3" title="Copy heading and permalink for Paragraphs: Collaboration and Academic Honesty" aria-label="Copy heading and permalink for Paragraphs: Collaboration and Academic Honesty">🔗</a></div>
+</section>
+<section class="paragraphs" id="homework-expectations-4"><h3 class="heading"><span class="title">Writing mathematics well.</span></h3>
 <div class="para" id="homework-expectations-4-2">Here is an example from one of a recent MTH 204 course.  There’s a screenshot of a portion of one problem below, and the full problem solution in the example link above.<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;">
-<img src="external/images/hmk-sample.png" class="contained" alt="A photograph of exemplary student work that demonstrates the principles described below"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="homework-expectations-4-3-description"><div class="para" id="homework-expectations-4-3-2-1">A photograph of exemplary student work that demonstrates the principles described below<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div></details>
+<img src="external/images/hmk-sample.png" class="contained" alt="A photograph of exemplary student work that demonstrates the principles described below"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="homework-expectations-4-3-description">
+<div class="para" id="homework-expectations-4-3-2-1">A photograph of exemplary student work that demonstrates the principles described below<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
 </div>
 <div class="para logical" id="homework-expectations-4-4">
 <div class="para">Here’s why this is well done:</div>
@@ -398,7 +365,9 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Writing mathematics well"><a href="#homework-expectations-4" title="Copy heading and permalink for Paragraphs: Writing mathematics well" aria-label="Copy heading and permalink for Paragraphs: Writing mathematics well">🔗</a></div></section><section class="paragraphs" id="homework-expectations-5"><h3 class="heading"><span class="title">Overall Expectations.</span></h3>
+<div class="autopermalink" data-description="Paragraphs: Writing mathematics well"><a href="#homework-expectations-4" title="Copy heading and permalink for Paragraphs: Writing mathematics well" aria-label="Copy heading and permalink for Paragraphs: Writing mathematics well">🔗</a></div>
+</section>
+<section class="paragraphs" id="homework-expectations-5"><h3 class="heading"><span class="title">Overall Expectations.</span></h3>
 <div class="para logical" id="homework-expectations-5-2">
 <div class="para">For each of these assignments, here are expectations for how you present your work.</div>
 <ol class="decimal" id="homework-expectations-5-2-1">
@@ -439,7 +408,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="homework-expectations-5-4">Your best work is expected on each homework assignment. Planning ahead and giving yourself an appropriate amount of time to work will enable you to meet these standards.  Consider these assignments your opportunity to show me how well you understand recent material.<div class="autopermalink" data-description="Paragraph"><a href="#homework-expectations-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Overall Expectations"><a href="#homework-expectations-5" title="Copy heading and permalink for Paragraphs: Overall Expectations" aria-label="Copy heading and permalink for Paragraphs: Overall Expectations">🔗</a></div></section><div class="autopermalink" data-description="Section: Written homework expectations"><a href="#homework-expectations" title="Copy heading and permalink for Section: Written homework expectations" aria-label="Copy heading and permalink for Section: Written homework expectations">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Paragraphs: Overall Expectations"><a href="#homework-expectations-5" title="Copy heading and permalink for Paragraphs: Overall Expectations" aria-label="Copy heading and permalink for Paragraphs: Overall Expectations">🔗</a></div>
+</section><div class="autopermalink" data-description="Section: Written homework expectations"><a href="#homework-expectations" title="Copy heading and permalink for Section: Written homework expectations" aria-label="Copy heading and permalink for Section: Written homework expectations">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="targets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="course-calendar.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

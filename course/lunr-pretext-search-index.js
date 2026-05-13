@@ -289,6 +289,87 @@ var ptx_lunr_docs = [
   "body": "   Write an example of an augmented matrix in reduced row echelon form whose associated system of linear equations has no solution (that is, is inconsistent).      What feature of the pivot positions of the coefficient matrix allows the system to be inconsistent?    "
 },
 {
+  "id": "worksheet-tangent",
+  "level": "1",
+  "url": "worksheet-tangent.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Tangent line approximations",
+  "body": " Tangent line approximations  MTH 201: January 20     Determine the equation of a tangent line.    Use the tangent line to approximate the value of the function at nearby points.    Use information about the second derivative to assess the accuracy of the approximation.        <?xml version=\"1.0\" encoding=\"UTF-8\" ?> <objectives> <ul> <li> <p> Determine the equation of a tangent line. <\/p> <\/li> <li> <p> Use the tangent line to approximate the value of the function at nearby points. <\/p> <\/li> <li> <p> Use information about the second derivative to assess the accuracy of the approximation. <\/p> <\/li> <\/ul> <\/objectives>   PreTeXt source for the objectives     Remember that the derivative of a function at a point is defined by . When is close to , we have . From our last class period, we recognize the right hand side of this approximation as the equation of the tangent line at the point . That is, near the point , the value of the function is approximated by the value given by the tangent line.  We can see this graphically.   The graph of a function and its tangent line at a point.      f(x)=2.5-x^2\/2  a = 1       (a,f(a))                      <?xml version=\"1.0\" encoding=\"UTF-8\" ?> <introduction> <p> Remember that the derivative of a function <m>f<\/m> at a point <m>a<\/m> is defined by <md> f'(a) = \\lim_{x\\to a} \\frac{f(x)-f(a)}{x-a} <\/md>. When <m>x<\/m> is close to <m>a<\/m>, we have <md> <mrow> f'(a) \\amp \\approx \\frac{f(x)-f(a)}{x-a} <\/mrow> <mrow> f(x) \\amp \\approx f(a) + f'(a)(x-a) <\/mrow> <\/md>. From our last class period, we recognize the right hand side of this approximation as the equation of the tangent line at the point <m>a<\/m>. That is, near the point <m>a<\/m>, the value of the function <m>f(a+h)<\/m> is approximated by the value given by the tangent line. <\/p> <p> We can see this graphically. <\/p> <figure> <caption> The graph of a function and its tangent line at a point. <\/caption> <sidebyside width=\"60%\" margins=\"0% 40%\"> <image> <prefigure xmlns=\"https:\/\/prefigure.org\" label=\"prefigure-tangent\"> <diagram dimensions=\"(300, 300)\" margins=\"5\"> <definition>f(x)=2.5-x^2\/2<\/definition> <definition>a = 1<\/definition> <coordinates bbox=\"(-4,-4,4,4)\"> <grid-axes xlabel=\"x\" ylabel=\"y\"\/> <graph at=\"graph\" function=\"f\"\/> <tangent-line at=\"tangent\" function=\"f\" point=\"a\"\/> <point at=\"point\" p=\"(a,f(a))\" alignment=\"ne\"> <m>(a,f(a))<\/m> <\/point> <\/coordinates> <annotations> <annotation ref=\"figure\" text=\"The graph of a function and its tangent line at the point a equals 1\"> <annotation ref=\"graph-group\" text=\"The graph and its tangent line\"> <annotation ref=\"graph\" text=\"The graph of the function f\" sonify=\"yes\"\/> <annotation ref=\"point\" text=\"The point a comma f of a\"\/> <annotation ref=\"tangent\" text=\"The tangent line to the graph of f at the point\"\/> <\/annotation> <\/annotation> <\/annotations> <\/diagram> <\/prefigure> <\/image> <\/sidebyside> <\/figure> <\/introduction>   PreTeXt source for the introduction     Remember that a matrix in reduced row echelon form is characterized by these properties:  If the entries in a row are all zero, then the same is true of any row below it.  If we move across a row from left to right, the first nonzero entry we encounter is 1. We call this entry the leading entry in the row.  The leading entry in any row is to the right of the leading entries in all the rows above it.  A leading entry is the only nonzero entry in its column.       Consider each of the following augmented matrices. Determine if the matrix is in reduced row echelon form. If it is not, perform a sequence of scaling, interchange, and replacement operations to obtain a row equivalent matrix that is in reduced row echelon form. Then use the reduced row echelon matrix to determine whether there is a single solution, infinitely many solutions, or no solutions. If there are infinitely many, identify free and basic variables.                                   Suppose that the reduced row echelon form of a matrix looks like . What, if anything, does the last row tell you about the solution space?      Suppose that the reduced row echelon form of a matrix looks like . What, if anything, does the last row tell you about the solution space?      If a linear system has no solutions, how can you tell by looking at the reduced row echelon form of its augmented matrix.        If a matrix is in reduced row echelon form, remember that the leading entries are the leftmost ones in a row. We refer to the locations where the leading entries occur as pivot positions.   Circle the pivot positions in the reduced row echelon form below: .      If a system of linear equations has no solutions, what can you say about the pivot positions?      If a system of linear equations has infinitely many solutions, what can you say about the pivot positions?      If a system of linear equations has exactly one solution, what can you say about the pivot positions?      Make sure you can answer the following questions:  What is the reduced row echelon form of an augmented matrix and why is it useful?  How does reduced row echelon form tell us that a system of equations has no solutions?  How does reduced row echelon form tell us that a system of equations has a single solution?  How can Sage help us find the reduced row echelon form of a matrix?  What is a pivot position?     "
+},
+{
+  "id": "worksheet-tangent-3",
+  "level": "2",
+  "url": "worksheet-tangent.html#worksheet-tangent-3",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "   Determine the equation of a tangent line.    Use the tangent line to approximate the value of the function at nearby points.    Use information about the second derivative to assess the accuracy of the approximation.    "
+},
+{
+  "id": "worksheet-tangent-4",
+  "level": "2",
+  "url": "worksheet-tangent.html#worksheet-tangent-4",
+  "type": "Source",
+  "number": "1",
+  "title": "",
+  "body": "   <?xml version=\"1.0\" encoding=\"UTF-8\" ?> <objectives> <ul> <li> <p> Determine the equation of a tangent line. <\/p> <\/li> <li> <p> Use the tangent line to approximate the value of the function at nearby points. <\/p> <\/li> <li> <p> Use information about the second derivative to assess the accuracy of the approximation. <\/p> <\/li> <\/ul> <\/objectives>   PreTeXt source for the objectives   "
+},
+{
+  "id": "worksheet-tangent-5-3",
+  "level": "2",
+  "url": "worksheet-tangent.html#worksheet-tangent-5-3",
+  "type": "Figure",
+  "number": "2",
+  "title": "",
+  "body": " The graph of a function and its tangent line at a point.      f(x)=2.5-x^2\/2  a = 1       (a,f(a))                 "
+},
+{
+  "id": "worksheet-tangent-6",
+  "level": "2",
+  "url": "worksheet-tangent.html#worksheet-tangent-6",
+  "type": "Source",
+  "number": "2",
+  "title": "",
+  "body": "   <?xml version=\"1.0\" encoding=\"UTF-8\" ?> <introduction> <p> Remember that the derivative of a function <m>f<\/m> at a point <m>a<\/m> is defined by <md> f'(a) = \\lim_{x\\to a} \\frac{f(x)-f(a)}{x-a} <\/md>. When <m>x<\/m> is close to <m>a<\/m>, we have <md> <mrow> f'(a) \\amp \\approx \\frac{f(x)-f(a)}{x-a} <\/mrow> <mrow> f(x) \\amp \\approx f(a) + f'(a)(x-a) <\/mrow> <\/md>. From our last class period, we recognize the right hand side of this approximation as the equation of the tangent line at the point <m>a<\/m>. That is, near the point <m>a<\/m>, the value of the function <m>f(a+h)<\/m> is approximated by the value given by the tangent line. <\/p> <p> We can see this graphically. <\/p> <figure> <caption> The graph of a function and its tangent line at a point. <\/caption> <sidebyside width=\"60%\" margins=\"0% 40%\"> <image> <prefigure xmlns=\"https:\/\/prefigure.org\" label=\"prefigure-tangent\"> <diagram dimensions=\"(300, 300)\" margins=\"5\"> <definition>f(x)=2.5-x^2\/2<\/definition> <definition>a = 1<\/definition> <coordinates bbox=\"(-4,-4,4,4)\"> <grid-axes xlabel=\"x\" ylabel=\"y\"\/> <graph at=\"graph\" function=\"f\"\/> <tangent-line at=\"tangent\" function=\"f\" point=\"a\"\/> <point at=\"point\" p=\"(a,f(a))\" alignment=\"ne\"> <m>(a,f(a))<\/m> <\/point> <\/coordinates> <annotations> <annotation ref=\"figure\" text=\"The graph of a function and its tangent line at the point a equals 1\"> <annotation ref=\"graph-group\" text=\"The graph and its tangent line\"> <annotation ref=\"graph\" text=\"The graph of the function f\" sonify=\"yes\"\/> <annotation ref=\"point\" text=\"The point a comma f of a\"\/> <annotation ref=\"tangent\" text=\"The tangent line to the graph of f at the point\"\/> <\/annotation> <\/annotation> <\/annotations> <\/diagram> <\/prefigure> <\/image> <\/sidebyside> <\/figure> <\/introduction>   PreTeXt source for the introduction   "
+},
+{
+  "id": "worksheet-tangent-7-1",
+  "level": "2",
+  "url": "worksheet-tangent.html#worksheet-tangent-7-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "leading entry "
+},
+{
+  "id": "worksheet-tangent-8",
+  "level": "2",
+  "url": "worksheet-tangent.html#worksheet-tangent-8",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider each of the following augmented matrices. Determine if the matrix is in reduced row echelon form. If it is not, perform a sequence of scaling, interchange, and replacement operations to obtain a row equivalent matrix that is in reduced row echelon form. Then use the reduced row echelon matrix to determine whether there is a single solution, infinitely many solutions, or no solutions. If there are infinitely many, identify free and basic variables.                               "
+},
+{
+  "id": "worksheet-tangent-9",
+  "level": "2",
+  "url": "worksheet-tangent.html#worksheet-tangent-9",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "   Suppose that the reduced row echelon form of a matrix looks like . What, if anything, does the last row tell you about the solution space?      Suppose that the reduced row echelon form of a matrix looks like . What, if anything, does the last row tell you about the solution space?      If a linear system has no solutions, how can you tell by looking at the reduced row echelon form of its augmented matrix.    "
+},
+{
+  "id": "worksheet-tangent-10",
+  "level": "2",
+  "url": "worksheet-tangent.html#worksheet-tangent-10",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "   If a matrix is in reduced row echelon form, remember that the leading entries are the leftmost ones in a row. We refer to the locations where the leading entries occur as pivot positions.   Circle the pivot positions in the reduced row echelon form below: .      If a system of linear equations has no solutions, what can you say about the pivot positions?      If a system of linear equations has infinitely many solutions, what can you say about the pivot positions?      If a system of linear equations has exactly one solution, what can you say about the pivot positions?    "
+},
+{
   "id": "math204-homework",
   "level": "1",
   "url": "math204-homework.html",
